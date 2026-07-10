@@ -17,12 +17,10 @@ const state = {
 };
 
 const POST_TYPE_COLORS = {
-  dev_tip:            { bg: 'var(--purple-dim)',  color: 'var(--purple-light)', label: 'Dev Tip' },
-  client_story:       { bg: 'var(--blue-dim)',    color: 'var(--blue-light)',   label: 'Client Story' },
-  tech_discovery:     { bg: 'var(--teal-dim)',    color: '#2dd4bf',             label: 'Tech Discovery' },
-  dev_journey:        { bg: 'var(--green-dim)',   color: 'var(--green-light)',  label: 'Dev Journey' },
-  debugging_story:    { bg: 'var(--orange-dim)',  color: 'var(--orange)',       label: 'Debug Story' },
-  community_question: { bg: 'var(--pink-dim)',    color: '#f472b6',             label: 'Community Q' },
+  niche_solutions:     { bg: 'var(--purple-dim)',  color: 'var(--purple-light)', label: 'Niche Solutions' },
+  expertise_showcase:  { bg: 'var(--blue-dim)',    color: 'var(--blue-light)',   label: 'Expertise Showcase' },
+  client_growth_story: { bg: 'var(--teal-dim)',    color: '#2dd4bf',             label: 'Client Growth' },
+  tech_discovery:      { bg: 'var(--orange-dim)',  color: 'var(--orange)',       label: 'Tech Discovery' },
 };
 
 const SCHEDULE_UTC = [7, 12, 18];  // hours in UTC
