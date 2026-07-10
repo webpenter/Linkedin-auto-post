@@ -1,28 +1,27 @@
 {
   "persona": {
-    "name": "Ayub Khokhar",
-    "role": "Expert Web & Mobile Developer",
-    "experience_years": 5,
+    "name": "Ali Khan",
+    "role": "Software Engineer & Full Stack Developer",
+    "experience_years": 4,
     "stack": [
-      "PHP",
-      "Laravel",
-      "WordPress",
-      "Vue.js",
-      "Angular",
+      "MERN Stack",
+      "Next.js",
+      "React",
       "Node.js",
       "Express.js",
-      "Flutter",
-      "React Native"
+      "MongoDB",
+      "WordPress"
     ],
     "specialties": [
-      "Real Estate Apps",
-      "Rental & Booking Platforms",
-      "Custom Web Development",
-      "Payment Gateways",
-      "API Integrations",
-      "Fiverr/Upwork Top Rated"
+      "AI-Integrated Development",
+      "Workflow Automation",
+      "Custom Dashboards",
+      "SaaS Products",
+      "Real Estate Tech",
+      "AI Chatbots",
+      "Digital Storytelling"
     ],
-    "tone": "professional, confident, problem-solving, authoritative yet approachable, focused on business value"
+    "tone": "authoritative, innovative, practical, professional but accessible to fellow developers, tech founders, and students"
   },
   "schedule": {
     "monday": 1,
@@ -47,52 +46,52 @@
   },
   "topics": {
     "niche_solutions": [
-      "Why real estate agencies are moving away from generic templates to custom Flutter apps",
-      "How a dedicated booking mobile app increases rental conversions by 40%",
-      "The architecture behind 'Bookhere': my React Native booking & rental platform",
-      "Why off-the-shelf rental software fails when your business scales",
-      "Integrating complex payment gateways (Stripe/PayPal) seamlessly in accommodation platforms",
-      "How custom Laravel backends power high-traffic real estate portals better than CMS plugins",
-      "Cross-platform mobile apps for real estate agents: Flutter vs React Native",
-      "Automating property bookings and tenant management with Node.js and Express",
-      "Why speed and UI/UX matter more than ever in rental websites",
-      "Syncing external property APIs (like MLS) directly into a custom WordPress or Laravel site"
+      "Why combining Next.js with Supabase is the ultimate stack for fast SaaS prototyping",
+      "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs",
+      "Building scalable real estate portals: When to move past WordPress and into MERN",
+      "Automating internal workflows with Lovable: Real world use cases for startups",
+      "Why custom Next.js dashboards provide better business insights than out-of-the-box analytics",
+      "Using AI to automate data entry in legacy real estate platforms",
+      "Deploying intelligent customer support bots using Replit and modern LLMs",
+      "The architecture behind a high-performing SaaS product in the MERN stack",
+      "Bridging traditional web architecture with next-generation AI automation",
+      "How to rapidly deploy AI prototypes without sacrificing scalable backend structure"
     ],
     "expertise_showcase": [
-      "Why PHP and Laravel are still the absolute kings of custom business applications",
-      "Building CI/CD pipelines that deploy Laravel and Node.js apps without downtime",
-      "WordPress theme customization: going beyond page builders to write actual code",
-      "The hidden costs of poorly integrated APIs in e-commerce",
-      "Vue.js vs Angular for enterprise dashboards: my honest take",
-      "Optimizing database queries in Laravel to handle 10k+ daily users",
-      "How to securely handle webhooks from payment gateways in Express.js",
-      "Migrating legacy PHP applications to modern Laravel architecture",
-      "Building reusable custom plugins in WordPress that don't bloat the site",
-      "Why I chose React Native for my rental business app 'Bookhere'"
+      "MERN vs Next.js: My honest take on when to use which for your next startup",
+      "The reality of shipping AI-integrated products: It's not just API wrappers",
+      "How I use Claude Code to accelerate my daily full-stack development",
+      "Customizing advanced WordPress setups for real estate: Pushing the CMS to its limits",
+      "Why every modern developer needs to understand prompt engineering and workflow automation",
+      "State management in large scale Next.js applications",
+      "Building robust authentication flows with Supabase in React applications",
+      "My tech stack for building fast, intelligent SaaS products in 2026",
+      "The intersection of software engineering and digital storytelling: Lessons from 'Forgotten Footsteps'",
+      "Optimizing MongoDB queries for AI-heavy real-time dashboards"
     ],
     "client_growth_story": [
-      "A client from Europe needed a custom booking system after their SaaS failed them",
-      "How fixing a broken WordPress payment integration saved a US client's launch",
-      "My Upwork client wanted a mobile app in 4 weeks. Here's how Flutter made it possible",
-      "A real estate agency was losing leads due to slow load times. We rebuilt it in Laravel.",
-      "Client story: Automating manual invoice generation for a rental business",
-      "When a client asks for 'just a simple website' but actually needs a full SaaS platform",
-      "How clear communication on Fiverr led to a 3-year ongoing development contract",
-      "Rescuing a Node.js project that was abandoned by the previous developer",
-      "Building trust with international clients (US/Europe) as a remote developer",
-      "The moment a client realized their custom mobile app paid for itself in one month"
+      "How we built a custom AI chatbot that reduced a client's support tickets by 40%",
+      "Transitioning a client from a slow WordPress site to a blazing fast Next.js real estate portal",
+      "Prototyping a SaaS idea in 48 hours using Replit and Lovable for a tech founder",
+      "The moment a startup realized their AI integration actually improved user retention",
+      "Rescuing a poorly scaled MERN application for a growing business",
+      "How automating workflow pipelines saved a real estate agency 20 hours a week",
+      "Building an intelligent content management system that merges AI with traditional databases",
+      "Why a client chose custom Next.js over Shopify for their specialized product platform",
+      "Delivering a complex AI feature ahead of schedule using Claude Code",
+      "Bridging the gap between a founder's AI vision and practical engineering execution"
     ],
     "tech_discovery": [
-      "Why I insist on proper CI/CD pipelines even for small freelance projects",
-      "The evolution of PHP 8 has completely changed how I write Laravel apps",
-      "Discovering new state management patterns in Flutter",
-      "Why Headless WordPress with a Vue.js frontend is incredibly powerful",
-      "My favorite tools for testing APIs before integrating them into a client's frontend",
-      "The truth about cross-platform development (React Native/Flutter) in 2026",
-      "How Docker simplifies handing over projects to international clients",
-      "Why good logging in Node.js/Express saves you from 3 AM client panics",
-      "The importance of clean architecture in long-term freelance projects",
-      "Keeping up with tech trends while running a busy freelance business"
+      "The hidden potential of no-code tools like Lovable for professional software engineers",
+      "Why Supabase is becoming my default backend for AI-integrated applications",
+      "Discovering new ways to leverage Claude Code in complex MERN architecture",
+      "The evolution of React and Next.js: What tech founders need to know",
+      "How running a YouTube documentary channel improved my technical communication skills",
+      "Balancing traditional software engineering best practices with rapid AI prototyping",
+      "My favorite tools for testing AI API integrations before pushing to production",
+      "The future of real estate tech: AI, automation, and intelligent CRM integrations",
+      "Why clean code still matters even when AI is writing half of it",
+      "Keeping up with the overwhelming pace of AI development as a full-stack engineer"
     ]
   },
   "anti_ai_rules": [
@@ -104,40 +103,35 @@
     "Never use perfect bullet-point structure in every post",
     "Occasionally use contractions and informal language",
     "Include specific details like exact hours, numbers, frameworks",
-    "Keep it grounded and professional, aimed at B2B clients"
+    "Keep it grounded and professional, aimed at fellow developers and founders"
   ],
   "hashtag_pools": {
     "always_include": [
-      "webdevelopment",
-      "softwareengineering"
+      "softwareengineering",
+      "ai"
     ],
     "rotating": [
-      "php",
-      "laravel",
-      "wordpress",
-      "flutter",
-      "reactnative",
+      "mernstack",
+      "nextjs",
+      "reactjs",
       "nodejs",
-      "vuejs",
-      "angular",
-      "realestateapp",
-      "bookingsoftware",
-      "mobileappdevelopment",
-      "freelance",
-      "upwork",
-      "fiverr",
-      "api",
-      "paymentgateway",
-      "techcommunity",
-      "businessgrowth",
-      "b2b"
+      "aiautomation",
+      "saas",
+      "supabase",
+      "claudecode",
+      "replit",
+      "webdevelopment",
+      "realestatetech",
+      "techfounders",
+      "automation",
+      "fullstackdeveloper"
     ],
     "max_hashtags": 5
   },
   "image_settings": {
     "source": "both",
     "ai_model": "imagen-3.0-generate-001",
-    "image_style": "realistic, professional, tech-themed, modern workspace, software architecture, mobile app UI concepts",
+    "image_style": "realistic, professional, modern tech workspace, AI interfaces, dual monitors with React code, clean SaaS dashboard UI concepts",
     "dimensions": "1200x627"
   }
 }
