@@ -173,40 +173,46 @@ def build_prompt(post_type: str, topic: str, hashtags: list) -> str:
 
 
 def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
-    """Generate post text using Gemini API."""
+    """Generate post text using Gemini API with multi-model fallback."""
     client = genai.Client(api_key=GEMINI_API_KEY)
 
     prompt = build_prompt(post_type, topic, hashtags)
-    
-    for attempt in range(3):
-        try:
-            response = client.models.generate_content(
-                model="gemini-3.5-flash",
-                contents=prompt,
-                config=genai_types.GenerateContentConfig(
-                    temperature=0.90,
-                    top_p=0.95,
-                    max_output_tokens=2048,
-                ),
-            )
-            text = response.text.strip()
-            
-            # Sanitize: remove any em dashes that slipped through
-            text = text.replace("\u2014", "-").replace("\u2013", "-")
-            
-            # Ensure hashtags are at the end
-            if not any(f"#{h}" in text for h in hashtags):
-                hashtag_line = " ".join(f"#{h}" for h in hashtags)
-                text = f"{text}\n\n{hashtag_line}"
-            
-            print(f"[gemini] Post text generated ({len(text)} chars)")
-            return text
-            
-        except Exception as e:
-            print(f"[gemini] Attempt {attempt+1} failed: {e}")
-            time.sleep(2 ** attempt)
 
-    raise RuntimeError("Failed to generate post text after 3 attempts")
+    # Try models in order — fallback if one is overloaded or quota hit
+    models_to_try = ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-2.0-flash-001"]
+
+    for model in models_to_try:
+        for attempt in range(3):
+            try:
+                response = client.models.generate_content(
+                    model=model,
+                    contents=prompt,
+                    config=genai_types.GenerateContentConfig(
+                        temperature=0.90,
+                        top_p=0.95,
+                        max_output_tokens=2048,
+                    ),
+                )
+                text = response.text.strip()
+                text = text.replace("\u2014", "-").replace("\u2013", "-")
+                if not any(f"#{h}" in text for h in hashtags):
+                    hashtag_line = " ".join(f"#{h}" for h in hashtags)
+                    text = f"{text}\n\n{hashtag_line}"
+                print(f"[gemini] Post text generated via {model} ({len(text)} chars)")
+                return text
+            except Exception as e:
+                err_str = str(e)
+                print(f"[gemini] {model} attempt {attempt+1} failed: {err_str[:120]}")
+                wait = [15, 30, 60][attempt]
+                if "429" in err_str or "QUOTA" in err_str.upper() or "RESOURCE_EXHAUSTED" in err_str:
+                    print(f"[gemini] Quota hit on {model}, trying next model...")
+                    break
+                print(f"[gemini] Waiting {wait}s before retry...")
+                time.sleep(wait)
+        print(f"[gemini] All retries failed for {model}, trying next model...")
+
+    raise RuntimeError("Failed to generate post text — all models unavailable. Try again later.")
+
 
 
 # ══════════════════════════════════════════════════════════════════════════════
