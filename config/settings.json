@@ -32,9 +32,7 @@
     "saturday": 1,
     "sunday": 1,
     "times_utc": [
-      "07:00",
-      "12:00",
-      "18:00"
+      "12:00"
     ],
     "timezone_label": "Targeting US/Europe"
   },

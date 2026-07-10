@@ -23,7 +23,7 @@ const POST_TYPE_COLORS = {
   tech_discovery:      { bg: 'var(--orange-dim)',  color: 'var(--orange)',       label: 'Tech Discovery' },
 };
 
-const SCHEDULE_UTC = [7, 12, 18];  // hours in UTC
+const SCHEDULE_UTC = [12];  // hours in UTC
 
 // ── INIT ───────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
