@@ -331,13 +331,25 @@ def refresh_linkedin_token() -> tuple[str, str]:
 
 
 def validate_token() -> bool:
-    """Check if current access token is valid."""
-    headers = {
-        "Authorization": f"Bearer {LINKEDIN_ACCESS_TOKEN}",
-        "LinkedIn-Version": LINKEDIN_VERSION,
-    }
-    resp = requests.get(f"{LINKEDIN_API_BASE}/v2/userinfo", headers=headers, timeout=10)
-    return resp.status_code == 200
+    """Check if current access token is valid via LinkedIn token introspection."""
+    try:
+        resp = requests.post(
+            "https://www.linkedin.com/oauth/v2/introspectToken",
+            data={
+                "client_id": LINKEDIN_CLIENT_ID,
+                "client_secret": LINKEDIN_CLIENT_SECRET,
+                "token": LINKEDIN_ACCESS_TOKEN,
+            },
+            timeout=10,
+        )
+        if resp.ok:
+            data = resp.json()
+            is_active = data.get("active", False)
+            print(f"[linkedin] Token introspect: active={is_active}, scope={data.get('scope', 'unknown')}")
+            return is_active
+    except Exception as e:
+        print(f"[linkedin] Token validation error: {e}")
+    return False
 
 
 def update_github_secrets(access_token: str, refresh_token: str) -> None:

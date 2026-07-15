@@ -127,8 +127,8 @@
     "max_hashtags": 5
   },
   "image_settings": {
-    "source": "both",
-    "ai_model": "imagen-3.0-generate-001",
+    "source": "unsplash",
+    "ai_model": "imagen-3.0-generate-002",
     "image_style": "realistic, professional, modern tech workspace, AI interfaces, dual monitors with React code, clean SaaS dashboard UI concepts",
     "dimensions": "1200x627"
   }
