@@ -31,7 +31,7 @@ load_dotenv()
 CLIENT_ID     = os.getenv("LINKEDIN_CLIENT_ID", "")
 CLIENT_SECRET = os.getenv("LINKEDIN_CLIENT_SECRET", "")
 REDIRECT_URI  = "http://localhost:8765/callback"
-SCOPES        = ["openid", "profile", "email", "w_member_social"]
+SCOPES        = ["w_member_social"]
 AUTH_URL      = "https://www.linkedin.com/oauth/v2/authorization"
 TOKEN_URL     = "https://www.linkedin.com/oauth/v2/accessToken"
 # ─────────────────────────────────────────────────────────────────────────────
@@ -78,13 +78,29 @@ def get_user_urn(access_token: str) -> str:
     """Fetch the LinkedIn member URN (needed for posting)."""
     headers = {
         "Authorization": f"Bearer {access_token}",
-        "LinkedIn-Version": "202401",
+        "LinkedIn-Version": "202606",
+        "X-Restli-Protocol-Version": "2.0.0",
     }
-    resp = requests.get("https://api.linkedin.com/v2/userinfo", headers=headers)
+    # Try /rest/me first (new REST API, works with w_member_social)
+    resp = requests.get("https://api.linkedin.com/rest/me", headers=headers)
     if resp.ok:
         data = resp.json()
-        sub = data.get("sub", "")
-        return f"urn:li:person:{sub}"
+        member_id = data.get("id", "")
+        if member_id:
+            return f"urn:li:person:{member_id}"
+
+    # Fallback: /v2/me
+    resp2 = requests.get("https://api.linkedin.com/v2/me", headers={
+        "Authorization": f"Bearer {access_token}",
+        "LinkedIn-Version": "202606",
+    })
+    if resp2.ok:
+        data = resp2.json()
+        member_id = data.get("id", "")
+        if member_id:
+            return f"urn:li:person:{member_id}"
+
+    print(f"[warn] Could not fetch user URN: {resp.status_code} {resp.text[:200]}")
     return ""
 
 
@@ -169,8 +185,7 @@ def main():
 
     print("\n  Backup saved to data/tokens_backup.json")
     print("  (Do NOT commit this file — it's in .gitignore)\n")
-    print("  Next step: Add all secrets to:")
-    print("  GitHub repo → Settings → Secrets and variables → Actions\n")
+    print("  Next step: Add all secrets to:\n  GitHub repo -> Settings -> Secrets and variables -> Actions\n")
 
 
 if __name__ == "__main__":
