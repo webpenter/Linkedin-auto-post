@@ -159,10 +159,26 @@
       "text_preview": "Most business dashboards are expensive graveyards of data that your clients actively ignore.\n\nUsers do not want to click through ten different dropdowns and complex filters just to find out which sale...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483094748619141120/"
+    },
+    {
+      "id": "urn:li:share:7483169293229191168",
+      "timestamp": "2026-07-15T14:43:10.419349+00:00",
+      "post_type": "industry_insight",
+      "topic": "What actually makes a booking platform work for real customers",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "businessautomation",
+        "aiautomation",
+        "bookingplatform"
+      ],
+      "text_preview": "Most booking platforms lose forty percent of their users before they even reach the payment page.\n\nFounders often think a beautiful UI solves everything. But if your calendar sync takes more than thre...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483169293229191168/"
     }
   ],
-  "last_updated": "2026-07-15T09:46:58.132536+00:00",
-  "total_posts": 10,
+  "last_updated": "2026-07-15T14:43:10.419364+00:00",
+  "total_posts": 11,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -173,6 +189,7 @@
     "Why I chose React Native for my rental business app 'Bookhere'",
     "Why real estate agencies are moving away from generic templates to custom Flutter apps",
     "Vue.js vs Angular for enterprise dashboards: my honest take",
-    "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs"
+    "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs",
+    "What actually makes a booking platform work for real customers"
   ]
 }
