@@ -1,135 +1,165 @@
 {
   "persona": {
-    "name": "Ali Khan",
-    "role": "Software Engineer & Full Stack Developer",
-    "experience_years": 4,
+    "name": "Webpenter",
+    "role": "Full-Service Software House",
+    "tagline": "We build websites, mobile apps, real estate platforms, booking systems, and AI-powered solutions for businesses and teach the next generation of developers.",
+    "services": [
+      "Website Development",
+      "Mobile App Development",
+      "SEO & Digital Marketing",
+      "Real Estate Software Solutions",
+      "Booking & Rental Platforms",
+      "AI Automation for Business",
+      "Webpenter Academy (Web & App Courses)"
+    ],
     "stack": [
-      "MERN Stack",
-      "Next.js",
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "WordPress"
+      "React", "Next.js", "Node.js", "React Native",
+      "Flutter", "WordPress", "Laravel", "MongoDB", "PostgreSQL"
     ],
-    "specialties": [
-      "AI-Integrated Development",
-      "Workflow Automation",
-      "Custom Dashboards",
-      "SaaS Products",
-      "Real Estate Tech",
-      "AI Chatbots",
-      "Digital Storytelling"
-    ],
-    "tone": "authoritative, innovative, practical, professional but accessible to fellow developers, tech founders, and students"
+    "tone": "confident, trustworthy, direct, and human — speaking to business owners, entrepreneurs, real estate professionals, startups, and students in Pakistan and globally"
   },
   "schedule": {
-    "monday": 1,
-    "tuesday": 1,
-    "wednesday": 1,
-    "thursday": 1,
-    "friday": 1,
-    "saturday": 1,
-    "sunday": 1,
-    "times_utc": [
-      "12:00"
-    ],
-    "timezone_label": "Targeting US/Europe"
+    "monday": 2,
+    "tuesday": 2,
+    "wednesday": 2,
+    "thursday": 2,
+    "friday": 2,
+    "saturday": 2,
+    "sunday": 2,
+    "times_utc": ["03:00", "13:00"],
+    "timezone_label": "Pakistan Time (PKT = UTC+5): 8:00 AM and 6:00 PM"
   },
   "post_type_weights": {
-    "niche_solutions": 0.3,
-    "expertise_showcase": 0.3,
-    "client_growth_story": 0.25,
-    "tech_discovery": 0.15
+    "service_spotlight": 0.25,
+    "client_success_story": 0.20,
+    "industry_insight": 0.20,
+    "ai_in_business": 0.20,
+    "academy_education": 0.15
   },
   "topics": {
-    "niche_solutions": [
-      "Why combining Next.js with Supabase is the ultimate stack for fast SaaS prototyping",
-      "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs",
-      "Building scalable real estate portals: When to move past WordPress and into MERN",
-      "Automating internal workflows with Lovable: Real world use cases for startups",
-      "Why custom Next.js dashboards provide better business insights than out-of-the-box analytics",
-      "Using AI to automate data entry in legacy real estate platforms",
-      "Deploying intelligent customer support bots using Replit and modern LLMs",
-      "The architecture behind a high-performing SaaS product in the MERN stack",
-      "Bridging traditional web architecture with next-generation AI automation",
-      "How to rapidly deploy AI prototypes without sacrificing scalable backend structure"
+    "service_spotlight": [
+      "Why custom website development beats template solutions for growing businesses",
+      "How a well-built mobile app can transform your customer experience",
+      "What proper SEO really does for your business in 2026",
+      "Real estate digital transformation: from scattered listings to full automation",
+      "Building booking and rental platforms that actually scale under real user traffic",
+      "The difference between a cheap website and a proper web application for your business",
+      "How we build mobile apps that work on both Android and iOS without doubling the cost",
+      "Why every real estate business needs a custom property portal in 2026",
+      "Automating your rental business with a smart online booking system",
+      "From inquiry to invoice: how proper web solutions save service businesses hours every day",
+      "WordPress vs Custom Development: when to use which for your business",
+      "How a professional SEO strategy turns your website into a lead generation machine",
+      "What a complete real estate web solution actually includes",
+      "Building a rental platform: the features that matter most to customers",
+      "Why businesses that invest in proper software grow faster than those that don't"
     ],
-    "expertise_showcase": [
-      "MERN vs Next.js: My honest take on when to use which for your next startup",
-      "The reality of shipping AI-integrated products: It's not just API wrappers",
-      "How I use Claude Code to accelerate my daily full-stack development",
-      "Customizing advanced WordPress setups for real estate: Pushing the CMS to its limits",
-      "Why every modern developer needs to understand prompt engineering and workflow automation",
-      "State management in large scale Next.js applications",
-      "Building robust authentication flows with Supabase in React applications",
-      "My tech stack for building fast, intelligent SaaS products in 2026",
-      "The intersection of software engineering and digital storytelling: Lessons from 'Forgotten Footsteps'",
-      "Optimizing MongoDB queries for AI-heavy real-time dashboards"
+    "client_success_story": [
+      "How we helped a real estate agency go fully digital in 6 weeks",
+      "A local rental business increased bookings by 60 percent after we built their platform",
+      "We built a school management system that saved our client 20 hours of admin work every week",
+      "From WhatsApp orders to a full e-commerce app: one of our clients' journeys",
+      "How our SEO work moved a small business from page 5 to page 1 in 3 months",
+      "A startup needed an MVP in 30 days. We delivered in 25.",
+      "Our booking system helped a property rental company manage 200+ reservations without spreadsheets",
+      "Turning a slow outdated WordPress site into a blazing fast real estate portal",
+      "How we integrated AI chat support into a client's workflow and cut their response time in half",
+      "A local service business tripled their online leads after a proper website rebuild with SEO",
+      "We built a complete property listing and management app for a real estate firm from scratch",
+      "How one of our academy graduates landed his first freelance project 2 months after finishing the course"
     ],
-    "client_growth_story": [
-      "How we built a custom AI chatbot that reduced a client's support tickets by 40%",
-      "Transitioning a client from a slow WordPress site to a blazing fast Next.js real estate portal",
-      "Prototyping a SaaS idea in 48 hours using Replit and Lovable for a tech founder",
-      "The moment a startup realized their AI integration actually improved user retention",
-      "Rescuing a poorly scaled MERN application for a growing business",
-      "How automating workflow pipelines saved a real estate agency 20 hours a week",
-      "Building an intelligent content management system that merges AI with traditional databases",
-      "Why a client chose custom Next.js over Shopify for their specialized product platform",
-      "Delivering a complex AI feature ahead of schedule using Claude Code",
-      "Bridging the gap between a founder's AI vision and practical engineering execution"
+    "industry_insight": [
+      "Why most small business websites are costing them customers without them realizing it",
+      "Mobile-first is no longer optional in 2026: what this really means for your business",
+      "SEO in 2026: what has changed and what businesses must do right now to stay visible",
+      "Real estate technology trends that are reshaping how property businesses operate",
+      "Why custom software beats off-the-shelf tools for businesses that want to scale",
+      "The hidden cost of a bad or outdated website for a service business",
+      "What actually makes a booking platform work for real customers",
+      "Why Pakistani businesses need to take their digital presence seriously in 2026",
+      "The real difference between a website and a web application",
+      "How much should a business really invest in its digital presence?",
+      "Why your competitor is getting more online leads even though your service is better",
+      "What business owners get wrong about mobile apps",
+      "The website mistakes that drive potential clients away within 5 seconds",
+      "Why a real estate business without a proper digital platform is leaving money on the table"
     ],
-    "tech_discovery": [
-      "The hidden potential of no-code tools like Lovable for professional software engineers",
-      "Why Supabase is becoming my default backend for AI-integrated applications",
-      "Discovering new ways to leverage Claude Code in complex MERN architecture",
-      "The evolution of React and Next.js: What tech founders need to know",
-      "How running a YouTube documentary channel improved my technical communication skills",
-      "Balancing traditional software engineering best practices with rapid AI prototyping",
-      "My favorite tools for testing AI API integrations before pushing to production",
-      "The future of real estate tech: AI, automation, and intelligent CRM integrations",
-      "Why clean code still matters even when AI is writing half of it",
-      "Keeping up with the overwhelming pace of AI development as a full-stack engineer"
+    "ai_in_business": [
+      "How AI is changing the way software companies deliver projects in 2026",
+      "We now use AI tools to cut development time by 40 percent. Here is exactly how.",
+      "AI chatbots for real estate: answering client questions at 2am without hiring more staff",
+      "Automating repetitive business tasks with AI: real examples from our client projects",
+      "How AI content tools are helping small businesses compete with bigger marketing budgets",
+      "The honest truth about AI in web development from a software house that uses it daily",
+      "AI in property management: from lead generation to automated tenant follow-ups",
+      "How we use AI to deliver better code quality faster without cutting corners",
+      "AI-powered SEO: the tools we actually use in our agency and what they do",
+      "Why every business owner should understand AI automation even if they do not write code",
+      "How AI is making custom software development more affordable for small businesses",
+      "Automating your sales follow-up with AI: what we built for a client and what happened",
+      "The AI tools every digital agency should be using in 2026",
+      "How we combined AI with traditional web development to build smarter real estate platforms"
+    ],
+    "academy_education": [
+      "Why learning web development in Pakistan is one of the best career decisions in 2026",
+      "Our academy students built their first live project in 8 weeks. Here is what they learned.",
+      "The web development roadmap we give every new student at Webpenter Academy",
+      "Frontend or Backend: which should beginners actually learn first?",
+      "From student to freelancer: how our graduates start earning online within 6 months",
+      "Why mobile app development is a skill worth investing in as a student right now",
+      "What we teach differently at Webpenter Academy compared to free YouTube tutorials",
+      "How Pakistani developers can compete globally by mastering the right tech stack",
+      "The biggest mistake students make when learning to code and how to avoid it",
+      "What you actually learn in our 3-month web development program week by week",
+      "Why practical project-based learning beats theory-heavy courses for developers",
+      "How our app development course prepares students for real client projects, not just theory"
     ]
   },
   "anti_ai_rules": [
     "Never use em dashes (—)",
     "Never start with 'In today's fast-paced digital world'",
-    "Never use 'game-changer', 'dive into', 'leverage', 'seamless', 'delve', 'revolutionize'",
+    "Never use 'game-changer', 'dive into', 'leverage', 'seamless', 'delve', 'revolutionize', 'cutting-edge'",
     "Never use 'In conclusion' or 'In summary'",
-    "Never use 'I am excited to share'",
-    "Never use perfect bullet-point structure in every post",
-    "Occasionally use contractions and informal language",
-    "Include specific details like exact hours, numbers, frameworks",
-    "Keep it grounded and professional, aimed at fellow developers and founders"
+    "Never use 'I am excited to share' or 'We are thrilled to announce'",
+    "Never use perfect bullet-point structure for the whole post",
+    "Occasionally use contractions and conversational phrasing",
+    "Include specific numbers, timeframes, and concrete outcomes",
+    "Write like a real person sharing a genuine experience or opinion",
+    "Keep it grounded, professional, and accessible to non-technical business owners"
   ],
   "hashtag_pools": {
     "always_include": [
-      "softwareengineering",
-      "ai"
+      "webpenter",
+      "softwaredevelopment"
     ],
     "rotating": [
-      "mernstack",
-      "nextjs",
-      "reactjs",
-      "nodejs",
+      "websitedevelopment",
+      "mobileappdevelopment",
+      "seo",
+      "realestatetechnology",
+      "bookingplatform",
       "aiautomation",
-      "saas",
-      "supabase",
-      "claudecode",
-      "replit",
       "webdevelopment",
+      "appdevelopment",
+      "digitaltransformation",
+      "softwarehouse",
+      "techpakistan",
+      "pakistansoftware",
+      "webpenteracademy",
+      "learntocode",
+      "startuptech",
+      "businessautomation",
       "realestatetech",
-      "techfounders",
-      "automation",
-      "fullstackdeveloper"
+      "rentalplatform",
+      "nextjs",
+      "reactnative"
     ],
     "max_hashtags": 5
   },
   "image_settings": {
     "source": "unsplash",
     "ai_model": "imagen-3.0-generate-002",
-    "image_style": "realistic, professional, modern tech workspace, AI interfaces, dual monitors with React code, clean SaaS dashboard UI concepts",
+    "image_style": "professional software company, modern office, web development, mobile app design, real estate technology, clean business environment",
     "dimensions": "1200x627"
   }
 }

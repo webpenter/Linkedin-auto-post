@@ -2,7 +2,8 @@ name: LinkedIn Auto-Post
 
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 3 * * *'   # 8:00 AM PKT (UTC+5)
+    - cron: '0 13 * * *'  # 6:00 PM PKT (UTC+5)
 
   # Allow manual trigger from GitHub Actions UI or dashboard
   workflow_dispatch:
