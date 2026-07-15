@@ -143,10 +143,26 @@
       "text_preview": "Stop choosing Angular for your enterprise dashboards just because it is the \"safe\" corporate choice.\n\nAngular forces your team into a rigid structure with strict rules for every single feature. Vue.js...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7481305781208928256/"
+    },
+    {
+      "id": "urn:li:share:7483094748619141120",
+      "timestamp": "2026-07-15T09:46:58.132521+00:00",
+      "post_type": "niche_solutions",
+      "topic": "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs",
+      "hashtags": [
+        "softwareengineering",
+        "ai",
+        "fullstackdeveloper",
+        "realestatetech",
+        "nodejs"
+      ],
+      "text_preview": "Most business dashboards are expensive graveyards of data that your clients actively ignore.\n\nUsers do not want to click through ten different dropdowns and complex filters just to find out which sale...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483094748619141120/"
     }
   ],
-  "last_updated": "2026-07-10T11:18:15.015099+00:00",
-  "total_posts": 9,
+  "last_updated": "2026-07-15T09:46:58.132536+00:00",
+  "total_posts": 10,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -156,6 +172,7 @@
     "A real estate agency was losing leads due to slow load times. We rebuilt it in Laravel.",
     "Why I chose React Native for my rental business app 'Bookhere'",
     "Why real estate agencies are moving away from generic templates to custom Flutter apps",
-    "Vue.js vs Angular for enterprise dashboards: my honest take"
+    "Vue.js vs Angular for enterprise dashboards: my honest take",
+    "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs"
   ]
 }
