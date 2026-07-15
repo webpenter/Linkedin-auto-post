@@ -17,13 +17,14 @@ const state = {
 };
 
 const POST_TYPE_COLORS = {
-  niche_solutions:     { bg: 'var(--purple-dim)',  color: 'var(--purple-light)', label: 'Niche Solutions' },
-  expertise_showcase:  { bg: 'var(--blue-dim)',    color: 'var(--blue-light)',   label: 'Expertise Showcase' },
-  client_growth_story: { bg: 'var(--teal-dim)',    color: '#2dd4bf',             label: 'Client Growth' },
-  tech_discovery:      { bg: 'var(--orange-dim)',  color: 'var(--orange)',       label: 'Tech Discovery' },
+  service_spotlight:    { bg: 'var(--purple-dim)',  color: 'var(--purple-light)', label: 'Service Spotlight' },
+  client_success_story: { bg: 'var(--teal-dim)',    color: '#2dd4bf',             label: 'Client Success' },
+  industry_insight:     { bg: 'var(--orange-dim)',  color: 'var(--orange)',       label: 'Industry Insight' },
+  ai_in_business:       { bg: 'var(--blue-dim)',    color: 'var(--blue-light)',   label: 'AI in Business' },
+  academy_education:    { bg: 'var(--pink-dim)',    color: 'var(--pink)',         label: 'Academy' },
 };
 
-const SCHEDULE_UTC = [12];  // hours in UTC
+const SCHEDULE_UTC = [3, 13];  // hours in UTC (8am/6pm PKT)
 
 // ── INIT ───────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {

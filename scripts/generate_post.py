@@ -45,7 +45,7 @@ LINKEDIN_CLIENT_ID     = os.getenv("LINKEDIN_CLIENT_ID", "")
 LINKEDIN_CLIENT_SECRET = os.getenv("LINKEDIN_CLIENT_SECRET", "")
 LINKEDIN_ACCESS_TOKEN  = os.getenv("LINKEDIN_ACCESS_TOKEN", "")
 LINKEDIN_REFRESH_TOKEN = os.getenv("LINKEDIN_REFRESH_TOKEN", "")
-LINKEDIN_USER_URN      = os.getenv("LINKEDIN_USER_URN", "")
+LINKEDIN_ORG_URN       = os.getenv("LINKEDIN_ORG_URN", "")
 GH_PAT                 = os.getenv("GH_PAT", "")
 GH_REPO                = os.getenv("GITHUB_REPOSITORY", "")  # auto-set by Actions
 DRY_RUN                = os.getenv("DRY_RUN", "false").lower() == "true"
@@ -62,16 +62,16 @@ TOKEN_REFRESH_URL  = "https://www.linkedin.com/oauth/v2/accessToken"
 # ══════════════════════════════════════════════════════════════════════════════
 
 POST_PROMPTS = {
-    "niche_solutions": """You are Ali Khan, a Software Engineer and Full Stack Developer based in Pakistan, specializing in MERN stack, Next.js, and AI automation.
-You are writing a LinkedIn post about a specific business solution: {topic}
+    "service_spotlight": """You are the LinkedIn voice of Webpenter, a full-service software house that builds websites, mobile apps, real estate platforms, booking systems, and AI-powered solutions for businesses, and also runs Webpenter Academy for aspiring developers.
+You are writing a LinkedIn post spotlighting one of our services: {topic}
 
 Write a HIGH-VALUE, authoritative LinkedIn post that:
 - Has a STRONG HOOK as the very first line (1 short sentence that grabs attention — a bold statement, shocking fact, or relatable problem)
-- Highlights a real business problem (in SaaS, dashboards, AI chatbots, or real estate tech) and shows how you solve it
-- Mentions your specific tools naturally when relevant (MERN, Next.js, Supabase, Lovable, Claude Code, Replit)
-- Uses first-person, professional voice aimed at fellow developers, tech founders, and students
-- Includes ONE specific example from your experience
-- Ends with a clear, specific call to action
+- Highlights a real business problem our clients face and shows how Webpenter solves it
+- Mentions our stack naturally when relevant (React, Next.js, Node.js, React Native, Flutter, WordPress, Laravel)
+- Uses first-person-plural "we" voice, speaking as the company, aimed at business owners, entrepreneurs, real estate professionals, and startups
+- Includes ONE concrete, specific detail (a feature, a workflow, a number) that shows real expertise
+- Ends with a clear, specific call to action inviting the reader to work with us
 
 FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
@@ -90,40 +90,15 @@ STRICT RULES — NEVER break these:
 
 Write the post now. Output ONLY the post itself, nothing else:""",
 
-    "expertise_showcase": """You are Ali Khan, an expert in AI-integrated development and MERN stack architecture.
-You are writing a LinkedIn post showcasing a technical insight: {topic}
-
-Write a SHORT, insightful LinkedIn post that:
-- Starts with a HOOK — one bold, confident sentence that states the core insight
-- Explains the technical concept in plain English (not jargon-heavy)
-- Uses a short specific example from a real project you have worked on
-- Shows why this matters to the business owner or other engineers
-- Ends with a genuine open question to spark comments from CTOs or tech founders
-
-FORMATTING RULES (critical for LinkedIn readability):
-- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Break the post into 4-5 sections with spacing between them
-- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
-
-STRICT RULES — NEVER break these:
-- No em dashes (—) at all
-- No AI buzzwords ("Game-changer", "Delve", "Leverage", "Robust", "Cutting-edge")
-- No "In conclusion" or "To summarize"
-- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
-- Max 5 hashtags total
-- Make sure the final sentence is completely finished with proper punctuation before stopping.
-
-Write the post now. Output ONLY the post itself, nothing else:""",
-
-    "client_growth_story": """You are Ali Khan, a Software Engineer who builds custom MERN/Next.js apps and AI chatbots for clients.
-You are writing a LinkedIn post about a real client story: {topic}
+    "client_success_story": """You are the LinkedIn voice of Webpenter, a full-service software house that builds websites, mobile apps, real estate platforms, booking systems, and AI-powered solutions for businesses.
+You are writing a LinkedIn post about a real client success story: {topic}
 
 Write a COMPELLING story-style LinkedIn post that:
-- Starts with a HOOK that puts the reader IN the moment
-- Builds tension briefly (what was broken, what was at stake)
-- Describes your solution (keep it simple and human, mentioning tools like Supabase or Claude if relevant)
-- Ends with the result/impact (time saved, revenue increased, client happy)
-- Closes with a subtle open invitation: let people know you build SaaS and AI workflows
+- Starts with a HOOK that puts the reader IN the moment (the client's problem, before Webpenter got involved)
+- Builds tension briefly (what was broken, what was at stake for the client's business)
+- Describes how our team solved it (keep it simple and human, mention the relevant stack only if it adds credibility)
+- Ends with the measurable result/impact (time saved, revenue increased, leads gained, client happy)
+- Closes with a subtle open invitation: let readers know Webpenter builds this kind of software for businesses like theirs
 
 FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
@@ -140,22 +115,74 @@ STRICT RULES — NEVER break these:
 
 Write the post now. Output ONLY the post itself, nothing else:""",
 
-    "tech_discovery": """You are Ali Khan, a Full Stack Developer (MERN/Next.js) exploring AI automation.
-You are writing a LinkedIn post about a technology insight or opinion: {topic}
+    "industry_insight": """You are the LinkedIn voice of Webpenter, a full-service software house serving business owners, entrepreneurs, real estate professionals, and startups in Pakistan and globally.
+You are writing a LinkedIn post sharing an industry insight or opinion: {topic}
 
 Write a SHORT, opinionated LinkedIn post that:
-- Starts with a HOOK — one bold opinion or surprising statement
-- Explains your view in 2-3 short paragraphs
-- Relates it back to how it helps build scalable web apps or AI tools
-- Ends with a simple question to get the audience's opinion
+- Starts with a HOOK — one bold, confident opinion or surprising statement about the industry
+- Explains our view in plain English (not jargon-heavy), aimed at non-technical business owners
+- Uses a short specific example or observation from projects we have worked on
+- Shows why this matters to the reader's bottom line, not just to developers
+- Ends with a genuine question to spark comments from business owners and founders
 
 FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Break the post into 4-5 sections with spacing between them
 - Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
-- No AI buzzwords
+- No AI buzzwords ("Game-changer", "Delve", "Leverage", "Robust", "Cutting-edge")
+- No "In conclusion" or "To summarize"
+- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
+- Max 5 hashtags total
+- Make sure the final sentence is completely finished with proper punctuation before stopping.
+
+Write the post now. Output ONLY the post itself, nothing else:""",
+
+    "ai_in_business": """You are the LinkedIn voice of Webpenter, a full-service software house that builds AI automation into client projects daily (chatbots, automated follow-ups, AI-assisted development).
+You are writing a LinkedIn post about AI in business: {topic}
+
+Write a SHORT, grounded LinkedIn post that:
+- Starts with a HOOK — one bold, confident statement about how AI is actually being used, not hype
+- Explains a real, specific way we use AI in client work or our own delivery process
+- Keeps it honest — no exaggerated claims, mention real tradeoffs if relevant
+- Shows why this matters to a business owner who does not write code
+- Ends with a simple question or call to action inviting the reader's take or a conversation
+
+FORMATTING RULES (critical for LinkedIn readability):
+- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Break the post into 4-5 sections with spacing between them
+- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+
+STRICT RULES — NEVER break these:
+- No em dashes (—) at all
+- No AI buzzwords ("Revolutionize", "Game-changer", "Leverage", "Cutting-edge")
+- No "In today's fast-paced digital world"
+- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
+- Max 5 hashtags total
+- Make sure the final sentence is completely finished with proper punctuation before stopping.
+
+Write the post now. Output ONLY the post itself, nothing else:""",
+
+    "academy_education": """You are the LinkedIn voice of Webpenter, a full-service software house that also runs Webpenter Academy, teaching web and app development to students in Pakistan and beyond.
+You are writing a LinkedIn post about learning to code or student success: {topic}
+
+Write a SHORT, encouraging but honest LinkedIn post that:
+- Starts with a HOOK — one bold statement or relatable truth about learning to code
+- Shares a specific, concrete detail (a timeframe, a project, a student outcome) rather than vague encouragement
+- Speaks directly to students or career-changers considering development as a path
+- Ties it back naturally to what Webpenter Academy teaches or how it is different, without being a hard sales pitch
+- Ends with a clear, inviting call to action for students curious about the academy
+
+FORMATTING RULES (critical for LinkedIn readability):
+- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Break the post into 4-5 sections with spacing between them
+- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+
+STRICT RULES — NEVER break these:
+- No em dashes (—) at all
+- No AI buzzwords or generic motivational cliches ("Unlock your potential", "Journey", "Dream big")
 - Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
 - Make sure the final sentence is completely finished with proper punctuation before stopping.
@@ -165,7 +192,7 @@ Write the post now. Output ONLY the post itself, nothing else:"""
 
 
 def build_prompt(post_type: str, topic: str, hashtags: list) -> str:
-    template = POST_PROMPTS.get(post_type, POST_PROMPTS["niche_solutions"])
+    template = POST_PROMPTS.get(post_type, POST_PROMPTS["service_spotlight"])
     base_prompt = template.format(topic=topic)
     hashtag_str = " ".join(f"#{h}" for h in hashtags)
     base_prompt += f"\n\nEnd the post with exactly these hashtags on the last line:\n{hashtag_str}"
@@ -220,10 +247,11 @@ def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
 # ══════════════════════════════════════════════════════════════════════════════
 
 IMAGE_PROMPTS = {
-    "niche_solutions":     "A sleek real estate or rental booking mobile app UI on a modern smartphone, clean professional design, tech-themed, photorealistic",
-    "expertise_showcase":  "A developer's ultra-clean workspace with Laravel or PHP code on dual monitors, dark theme, professional tech office, photorealistic",
-    "client_growth_story": "A professional remote video call between a developer in Pakistan and a client in Europe, laptop with code visible, warm lighting, realistic",
-    "tech_discovery":      "A modern developer exploring a new framework or tool on a widescreen monitor, dark UI, focused expression, photorealistic",
+    "service_spotlight":    "A sleek real estate or rental booking mobile app UI on a modern smartphone next to a laptop showing a clean website, professional software company branding, photorealistic",
+    "client_success_story": "A professional remote video call between a software team and a happy client, laptop with a finished app or website visible, warm lighting, realistic",
+    "industry_insight":     "A modern software agency office with a team reviewing analytics and website performance on a large screen, clean professional design, photorealistic",
+    "ai_in_business":       "A developer's workspace with an AI chatbot interface and automation dashboard on dual monitors, dark theme, professional tech office, photorealistic",
+    "academy_education":    "A diverse group of students learning to code together in a modern classroom or bootcamp setting, laptops open, engaged expressions, photorealistic",
 }
 
 
@@ -232,7 +260,7 @@ def generate_image_gemini(post_type: str, post_text: str) -> bytes | None:
     try:
         client = genai.Client(api_key=GEMINI_API_KEY)
         
-        base_prompt = IMAGE_PROMPTS.get(post_type, IMAGE_PROMPTS.get("niche_solutions", "Professional office"))
+        base_prompt = IMAGE_PROMPTS.get(post_type, IMAGE_PROMPTS.get("service_spotlight", "Professional office"))
         full_prompt = f"{base_prompt}. Professional LinkedIn post image, no text overlay."
         
         # Read the model name from config, fallback to imagen-3.0-generate-001
@@ -266,25 +294,29 @@ def get_unsplash_image(post_type: str) -> tuple[str, bytes]:
     Returns (url, image_bytes)
     """
     photo_urls = {
-        "niche_solutions": [
+        "service_spotlight": [
             "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop", # mobile app wireframes
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop", # data/dashboard
         ],
-        "expertise_showcase": [
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop", # developer laptop
-            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop", # code on screen
-        ],
-        "client_growth_story": [
+        "client_success_story": [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop", # people working
             "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop", # business meeting
         ],
-        "tech_discovery": [
+        "industry_insight": [
             "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop", # modern tech setup
             "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop", # glowing code
+        ],
+        "ai_in_business": [
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop", # developer laptop
+            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop", # code on screen
+        ],
+        "academy_education": [
+            "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop", # students learning
+            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop", # classroom coding
         ]
     }
-    
-    url = random.choice(photo_urls.get(post_type, photo_urls["niche_solutions"]))
+
+    url = random.choice(photo_urls.get(post_type, photo_urls["service_spotlight"]))
     print(f"[fallback] Downloading image from: {url}")
     
     try:
@@ -434,7 +466,7 @@ def upload_image_to_linkedin(image_bytes: bytes) -> str | None:
     # Step 1: Register upload
     register_body = {
         "initializeUploadRequest": {
-            "owner": LINKEDIN_USER_URN,
+            "owner": LINKEDIN_ORG_URN,
         }
     }
     
@@ -473,7 +505,7 @@ def publish_post(text: str, image_urn: str | None = None) -> str | None:
     headers = get_auth_headers()
     
     content = {
-        "author": LINKEDIN_USER_URN,
+        "author": LINKEDIN_ORG_URN,
         "commentary": text,
         "visibility": "PUBLIC",
         "distribution": {
@@ -488,7 +520,7 @@ def publish_post(text: str, image_urn: str | None = None) -> str | None:
     if image_urn:
         content["content"] = {
             "media": {
-                "altText": "Developer workspace",
+                "altText": "Webpenter software development",
                 "id": image_urn,
             }
         }
@@ -524,8 +556,8 @@ def main(dry_run: bool = False, hint: str = "") -> None:
     # Validate config
     if not GEMINI_API_KEY:
         raise EnvironmentError("GEMINI_API_KEY is not set")
-    if not LINKEDIN_USER_URN and not dry_run:
-        raise EnvironmentError("LINKEDIN_USER_URN is not set")
+    if not LINKEDIN_ORG_URN and not dry_run:
+        raise EnvironmentError("LINKEDIN_ORG_URN is not set")
 
     # Check daily schedule quota
     with open(Path(__file__).parent.parent / "config" / "settings.json", "r", encoding="utf-8") as f:

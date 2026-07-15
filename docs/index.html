@@ -169,13 +169,23 @@
           <div class="schedule-list">
             <div class="schedule-item" id="schedule-1">
               <div class="schedule-time">
-                <span class="time-utc">12:00 UTC</span>
-                <span class="time-local">17:00 PKT</span>
+                <span class="time-utc">03:00 UTC</span>
+                <span class="time-local">08:00 PKT</span>
               </div>
               <div class="schedule-bar">
                 <div class="schedule-progress" id="prog-1"></div>
               </div>
               <span class="schedule-status" id="sch-status-1">Upcoming</span>
+            </div>
+            <div class="schedule-item" id="schedule-2">
+              <div class="schedule-time">
+                <span class="time-utc">13:00 UTC</span>
+                <span class="time-local">18:00 PKT</span>
+              </div>
+              <div class="schedule-bar">
+                <div class="schedule-progress" id="prog-2"></div>
+              </div>
+              <span class="schedule-status" id="sch-status-2">Upcoming</span>
             </div>
           </div>
 
@@ -185,10 +195,11 @@
             <h2 class="card-title">Post Type Mix</h2>
           </div>
           <div class="type-mix">
-            <div class="type-row"><span class="type-label">Niche Solutions</span><div class="type-bar"><div class="type-fill" style="width:30%;background:var(--purple)"></div></div><span class="type-pct">30%</span></div>
-            <div class="type-row"><span class="type-label">Expertise Showcase</span><div class="type-bar"><div class="type-fill" style="width:30%;background:var(--blue)"></div></div><span class="type-pct">30%</span></div>
-            <div class="type-row"><span class="type-label">Client Growth</span><div class="type-bar"><div class="type-fill" style="width:25%;background:var(--teal)"></div></div><span class="type-pct">25%</span></div>
-            <div class="type-row"><span class="type-label">Tech Discovery</span><div class="type-bar"><div class="type-fill" style="width:15%;background:var(--orange)"></div></div><span class="type-pct">15%</span></div>
+            <div class="type-row"><span class="type-label">Service Spotlight</span><div class="type-bar"><div class="type-fill" style="width:25%;background:var(--purple)"></div></div><span class="type-pct">25%</span></div>
+            <div class="type-row"><span class="type-label">Client Success</span><div class="type-bar"><div class="type-fill" style="width:20%;background:var(--teal)"></div></div><span class="type-pct">20%</span></div>
+            <div class="type-row"><span class="type-label">Industry Insight</span><div class="type-bar"><div class="type-fill" style="width:20%;background:var(--orange)"></div></div><span class="type-pct">20%</span></div>
+            <div class="type-row"><span class="type-label">AI in Business</span><div class="type-bar"><div class="type-fill" style="width:20%;background:var(--blue)"></div></div><span class="type-pct">20%</span></div>
+            <div class="type-row"><span class="type-label">Academy</span><div class="type-bar"><div class="type-fill" style="width:15%;background:var(--pink)"></div></div><span class="type-pct">15%</span></div>
           </div>
         </div>
       </div>
@@ -213,10 +224,11 @@
           <label class="form-label">Post Type</label>
           <div class="type-pills">
             <button class="type-pill active" data-type="">Auto (Weighted)</button>
-            <button class="type-pill" data-type="niche_solutions">Niche Solutions</button>
-            <button class="type-pill" data-type="expertise_showcase">Expertise Showcase</button>
-            <button class="type-pill" data-type="client_growth_story">Client Growth</button>
-            <button class="type-pill" data-type="tech_discovery">Tech Discovery</button>
+            <button class="type-pill" data-type="service_spotlight">Service Spotlight</button>
+            <button class="type-pill" data-type="client_success_story">Client Success</button>
+            <button class="type-pill" data-type="industry_insight">Industry Insight</button>
+            <button class="type-pill" data-type="ai_in_business">AI in Business</button>
+            <button class="type-pill" data-type="academy_education">Academy</button>
           </div>
         </div>
 
@@ -445,8 +457,8 @@
               <a href="https://www.linkedin.com/developers/apps/new" target="_blank" class="btn btn-sm btn-ghost">Open LinkedIn Developer Portal →</a>
               <ul class="step-list">
                 <li>App name: "LinkedIn Auto-Post" (or anything)</li>
-                <li>Associate with your LinkedIn company page (or create one)</li>
-                <li>Go to "Products" tab → Request access to <strong>"Share on LinkedIn"</strong></li>
+                <li>Associate with your Webpenter LinkedIn Company Page (create one first if it doesn't exist yet)</li>
+                <li>Go to "Products" tab → Request access to <strong>"Community Management API"</strong> (grants the <code>w_organization_social</code> scope needed to post as the Company Page)</li>
                 <li>Under "Auth" tab → Add redirect URL: <code>http://localhost:8765/callback</code></li>
                 <li>Copy your <strong>Client ID</strong> and <strong>Client Secret</strong></li>
               </ul>
@@ -531,8 +543,8 @@ python scripts/token_helper.py</code>
                   <span>From token_helper.py output</span>
                 </div>
                 <div class="secret-row">
-                  <code>LINKEDIN_USER_URN</code>
-                  <span>From token_helper.py output</span>
+                  <code>LINKEDIN_ORG_URN</code>
+                  <span>From token_helper.py output — must be a Company Page you administer</span>
                 </div>
                 <div class="secret-row">
                   <code>GH_PAT</code>

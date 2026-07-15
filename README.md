@@ -10,19 +10,18 @@ Posts **3 human-like LinkedIn posts per day** automatically at 12:00, 17:00, and
 
 - **Generates text** via Gemini API — conversational, no AI clichés, no em dashes
 - **Generates images** via Imagen API (with Unsplash fallback)
-- **Posts via LinkedIn official API** (`w_member_social` scope)
+- **Posts via LinkedIn official API** to the Webpenter Company Page (`w_organization_social` scope)
 - **Auto-refreshes OAuth tokens** and saves them back to GitHub Secrets
 - **Dashboard** on GitHub Pages to preview, trigger, and monitor posts
 
 ### Post Type Mix
 | Type | Weight | Example |
 |---|---|---|
-| Dev Tip | 25% | "Here's a React hook pattern I use in every project..." |
-| Client Story | 20% | "A client's database crashed with no backup. At 3am." |
-| Tech Discovery | 20% | "Just tried Hono.js. Actual thoughts." |
-| Dev Journey | 15% | "The first time I deployed to prod and it crashed..." |
-| Debug Story | 12% | "6 hours. Same error. It was a missing semicolon." |
-| Community Q | 8% | "Tabs or spaces? I have strong opinions." |
+| Service Spotlight | 25% | "Why custom website development beats template solutions for growing businesses" |
+| Client Success Story | 20% | "How we helped a real estate agency go fully digital in 6 weeks" |
+| Industry Insight | 20% | "Why most small business websites are costing them customers without them realizing it" |
+| AI in Business | 20% | "We now use AI tools to cut development time by 40 percent. Here is exactly how." |
+| Academy / Education | 15% | "Our academy students built their first live project in 8 weeks. Here is what they learned." |
 
 ---
 
@@ -53,12 +52,12 @@ GitHub Pages (dashboard/)
 ### Step 1 — Register LinkedIn Developer App
 
 1. Go to [developers.linkedin.com](https://www.linkedin.com/developers/apps/new)
-2. Create an app (associate with any LinkedIn Page)
-3. Go to **Products** tab → Request **"Share on LinkedIn"** access
+2. Create an app and associate it with your Webpenter LinkedIn Company Page (create the page first if it doesn't exist yet)
+3. Go to **Products** tab → Request **"Community Management API"** access (grants the `w_organization_social` scope needed to post as the Company Page instead of a personal profile)
 4. Under **Auth** tab → Add redirect URL: `http://localhost:8765/callback`
 5. Copy your **Client ID** and **Client Secret**
 
-> **Note:** LinkedIn "Share on LinkedIn" product approval typically takes 1-3 days.
+> **Note:** LinkedIn "Community Management API" product approval typically takes 1-3 days, and requires you to be an admin of the Company Page.
 
 ### Step 2 — Get Gemini API Key
 
@@ -80,7 +79,7 @@ echo "LINKEDIN_CLIENT_SECRET=your_client_secret" >> .env
 python scripts/token_helper.py
 ```
 
-Copy the printed values: `access_token`, `refresh_token`, `user_urn`
+Copy the printed values: `access_token`, `refresh_token`, `org_urn`
 
 ### Step 4 — Create GitHub PAT
 
@@ -100,7 +99,7 @@ Go to your repo → **Settings** → **Secrets and variables** → **Actions** �
 | `LINKEDIN_CLIENT_SECRET` | From LinkedIn Developer Portal |
 | `LINKEDIN_ACCESS_TOKEN` | From `token_helper.py` output |
 | `LINKEDIN_REFRESH_TOKEN` | From `token_helper.py` output |
-| `LINKEDIN_USER_URN` | From `token_helper.py` output |
+| `LINKEDIN_ORG_URN` | From `token_helper.py` output — must be a Company Page you administer |
 | `GH_PAT` | Your GitHub Personal Access Token |
 
 ### Step 6 — Push to GitHub
@@ -164,7 +163,7 @@ Edit `config/settings.json`:
 | GitHub Actions (public repo) | Free unlimited | **$0** |
 | Gemini API | Free tier (~90 calls/month) | **$0** |
 | Imagen API | Free tier (~90 images/month) | **$0** |
-| LinkedIn API | Free `w_member_social` | **$0** |
+| LinkedIn API | Free `w_organization_social` | **$0** |
 | GitHub Pages | Free | **$0** |
 | **Total** | | **$0/month** |
 
