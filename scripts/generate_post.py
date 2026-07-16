@@ -270,28 +270,59 @@ def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
 
     prompt = build_prompt(post_type, topic, hashtags)
 
-    # Try models in order — fallback if one is overloaded or quota hit
-    models_to_try = ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-2.0-flash-001"]
+    # Primary: gemini-2.5-flash (best quality, 500 RPD free tier)
+    # Fallbacks for quota exhaustion
+    models_to_try = [
+        "gemini-2.5-flash",
+        "gemini-2.0-flash-lite",
+        "gemini-2.0-flash",
+        "gemini-2.5-pro",
+    ]
+
+    system_instruction = (
+        "You are the official LinkedIn voice of Webpenter, a software house. "
+        "Always write as the company using 'we', 'our', 'Webpenter'. "
+        "Never use 'I', 'I remember', 'I think', or any first-person singular. "
+        "Write complete posts that end on a finished sentence."
+    )
 
     for model in models_to_try:
         for attempt in range(3):
             try:
+                # Disable thinking for 2.5-flash — we need output tokens, not reasoning tokens
+                if "2.5" in model:
+                    cfg = genai_types.GenerateContentConfig(
+                        system_instruction=system_instruction,
+                        temperature=0.88,
+                        top_p=0.95,
+                        max_output_tokens=4096,
+                        thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
+                    )
+                else:
+                    cfg = genai_types.GenerateContentConfig(
+                        system_instruction=system_instruction,
+                        temperature=0.88,
+                        top_p=0.95,
+                        max_output_tokens=4096,
+                    )
+
                 response = client.models.generate_content(
                     model=model,
                     contents=prompt,
-                    config=genai_types.GenerateContentConfig(
-                        temperature=0.90,
-                        top_p=0.95,
-                        max_output_tokens=2048,
-                    ),
+                    config=cfg,
                 )
                 text = response.text.strip()
+                # Remove any AI formatting characters
                 text = text.replace("\u2014", "-").replace("\u2013", "-")
+
+                # Ensure hashtags are appended if the model omitted them
                 if not any(f"#{h}" in text for h in hashtags):
                     hashtag_line = " ".join(f"#{h}" for h in hashtags)
                     text = f"{text}\n\n{hashtag_line}"
+
                 print(f"[gemini] Post text generated via {model} ({len(text)} chars)")
                 return text
+
             except Exception as e:
                 err_str = str(e)
                 print(f"[gemini] {model} attempt {attempt+1} failed: {err_str[:120]}")
@@ -299,9 +330,12 @@ def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
                 if "429" in err_str or "QUOTA" in err_str.upper() or "RESOURCE_EXHAUSTED" in err_str:
                     print(f"[gemini] Quota hit on {model}, trying next model...")
                     break
+                if "404" in err_str or "NOT_FOUND" in err_str:
+                    print(f"[gemini] Model {model} not available, trying next...")
+                    break
                 print(f"[gemini] Waiting {wait}s before retry...")
                 time.sleep(wait)
-        print(f"[gemini] All retries failed for {model}, trying next model...")
+        print(f"[gemini] All retries exhausted for {model}, trying next model...")
 
     raise RuntimeError("Failed to generate post text — all models unavailable. Try again later.")
 
