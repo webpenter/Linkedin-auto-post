@@ -175,10 +175,26 @@
       "text_preview": "Most booking platforms lose forty percent of their users before they even reach the payment page.\n\nFounders often think a beautiful UI solves everything. But if your calendar sync takes more than thre...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483169293229191168/"
+    },
+    {
+      "id": "urn:li:share:7483466142401847296",
+      "timestamp": "2026-07-16T10:22:45.256393+00:00",
+      "post_type": "service_spotlight",
+      "topic": "Why property businesses with only a website are missing the half of their market that searches, browses, and books on mobile",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "reactnative",
+        "techpakistan",
+        "seo"
+      ],
+      "text_preview": "Your website only shows half your business to the world.\n\nWe have built real estate portals and booking platforms for years. Many clients start with just a website, then wonder why half their customer...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483466142401847296/"
     }
   ],
-  "last_updated": "2026-07-15T14:43:10.419364+00:00",
-  "total_posts": 11,
+  "last_updated": "2026-07-16T10:22:45.256407+00:00",
+  "total_posts": 12,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -190,6 +206,7 @@
     "Why real estate agencies are moving away from generic templates to custom Flutter apps",
     "Vue.js vs Angular for enterprise dashboards: my honest take",
     "How integrating AI chatbots using Claude Code transforms generic dashboards into intelligent hubs",
-    "What actually makes a booking platform work for real customers"
+    "What actually makes a booking platform work for real customers",
+    "Why property businesses with only a website are missing the half of their market that searches, browses, and books on mobile"
   ]
 }
