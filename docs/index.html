@@ -457,8 +457,8 @@
               <a href="https://www.linkedin.com/developers/apps/new" target="_blank" class="btn btn-sm btn-ghost">Open LinkedIn Developer Portal →</a>
               <ul class="step-list">
                 <li>App name: "LinkedIn Auto-Post" (or anything)</li>
-                <li>Associate with your Webpenter LinkedIn Company Page (create one first if it doesn't exist yet)</li>
-                <li>Go to "Products" tab → Request access to <strong>"Community Management API"</strong> (grants the <code>w_organization_social</code> scope needed to post as the Company Page)</li>
+                <li>Associate with your LinkedIn company page (or create one)</li>
+                <li>Go to "Products" tab → Request access to <strong>"Share on LinkedIn"</strong></li>
                 <li>Under "Auth" tab → Add redirect URL: <code>http://localhost:8765/callback</code></li>
                 <li>Copy your <strong>Client ID</strong> and <strong>Client Secret</strong></li>
               </ul>
@@ -543,8 +543,8 @@ python scripts/token_helper.py</code>
                   <span>From token_helper.py output</span>
                 </div>
                 <div class="secret-row">
-                  <code>LINKEDIN_ORG_URN</code>
-                  <span>From token_helper.py output — must be a Company Page you administer</span>
+                  <code>LINKEDIN_USER_URN</code>
+                  <span>From token_helper.py output</span>
                 </div>
                 <div class="secret-row">
                   <code>GH_PAT</code>
