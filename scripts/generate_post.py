@@ -45,7 +45,7 @@ LINKEDIN_CLIENT_ID     = os.getenv("LINKEDIN_CLIENT_ID", "")
 LINKEDIN_CLIENT_SECRET = os.getenv("LINKEDIN_CLIENT_SECRET", "")
 LINKEDIN_ACCESS_TOKEN  = os.getenv("LINKEDIN_ACCESS_TOKEN", "")
 LINKEDIN_REFRESH_TOKEN = os.getenv("LINKEDIN_REFRESH_TOKEN", "")
-LINKEDIN_ORG_URN       = os.getenv("LINKEDIN_ORG_URN", "")
+LINKEDIN_USER_URN      = os.getenv("LINKEDIN_USER_URN", "")   # Personal profile URN (urn:li:person:...)
 GH_PAT                 = os.getenv("GH_PAT", "")
 GH_REPO                = os.getenv("GITHUB_REPOSITORY", "")  # auto-set by Actions
 DRY_RUN                = os.getenv("DRY_RUN", "false").lower() == "true"
@@ -466,7 +466,7 @@ def upload_image_to_linkedin(image_bytes: bytes) -> str | None:
     # Step 1: Register upload
     register_body = {
         "initializeUploadRequest": {
-            "owner": LINKEDIN_ORG_URN,
+            "owner": LINKEDIN_USER_URN,
         }
     }
     
@@ -501,11 +501,11 @@ def upload_image_to_linkedin(image_bytes: bytes) -> str | None:
 
 
 def publish_post(text: str, image_urn: str | None = None) -> str | None:
-    """Publish the post to LinkedIn. Returns the post URN."""
+    """Publish the post to LinkedIn personal profile. Returns the post URN."""
     headers = get_auth_headers()
     
     content = {
-        "author": LINKEDIN_ORG_URN,
+        "author": LINKEDIN_USER_URN,
         "commentary": text,
         "visibility": "PUBLIC",
         "distribution": {
@@ -556,8 +556,8 @@ def main(dry_run: bool = False, hint: str = "") -> None:
     # Validate config
     if not GEMINI_API_KEY:
         raise EnvironmentError("GEMINI_API_KEY is not set")
-    if not LINKEDIN_ORG_URN and not dry_run:
-        raise EnvironmentError("LINKEDIN_ORG_URN is not set")
+    if not LINKEDIN_USER_URN and not dry_run:
+        raise EnvironmentError("LINKEDIN_USER_URN is not set — run scripts/token_helper.py to get your personal URN")
 
     # Check daily schedule quota
     with open(Path(__file__).parent.parent / "config" / "settings.json", "r", encoding="utf-8") as f:

@@ -31,7 +31,7 @@ load_dotenv()
 CLIENT_ID     = os.getenv("LINKEDIN_CLIENT_ID", "")
 CLIENT_SECRET = os.getenv("LINKEDIN_CLIENT_SECRET", "")
 REDIRECT_URI  = "http://localhost:8765/callback"
-SCOPES        = ["w_organization_social"]
+SCOPES        = ["w_member_social", "openid", "profile", "email"]
 AUTH_URL      = "https://www.linkedin.com/oauth/v2/authorization"
 TOKEN_URL     = "https://www.linkedin.com/oauth/v2/accessToken"
 # ─────────────────────────────────────────────────────────────────────────────
@@ -74,40 +74,31 @@ def start_local_server():
     server.server_close()
 
 
-def get_org_urn(access_token: str) -> str:
-    """Fetch the LinkedIn Company Page URN(s) this member administers (needed for posting as the org)."""
+def get_person_urn(access_token: str) -> str:
+    """Fetch the authenticated member's own URN (urn:li:person:...)."""
     headers = {
         "Authorization": f"Bearer {access_token}",
         "LinkedIn-Version": "202606",
         "X-Restli-Protocol-Version": "2.0.0",
     }
     resp = requests.get(
-        "https://api.linkedin.com/rest/organizationAcls"
-        "?q=roleAssignee&role=ADMINISTRATOR&state=APPROVED",
+        "https://api.linkedin.com/v2/me",
         headers=headers,
     )
     if not resp.ok:
-        print(f"[warn] Could not fetch organization URN: {resp.status_code} {resp.text[:200]}")
+        print(f"[warn] Could not fetch member URN: {resp.status_code} {resp.text[:200]}")
         return ""
 
-    elements = resp.json().get("elements", [])
-    org_urns = [
-        e.get("organizationalTarget") or e.get("organization", "")
-        for e in elements
-    ]
-    org_urns = [u for u in org_urns if u]
-
-    if not org_urns:
-        print("[warn] No administered Company Pages found for this account.")
+    data = resp.json()
+    member_id = data.get("id", "")
+    if not member_id:
+        print("[warn] Member ID not found in /v2/me response.")
         return ""
 
-    if len(org_urns) > 1:
-        print(f"\n[info] This account administers {len(org_urns)} Company Pages:")
-        for u in org_urns:
-            print(f"    {u}")
-        print("  Using the first one below. Copy a different LINKEDIN_ORG_URN manually if needed.\n")
-
-    return org_urns[0]
+    urn = f"urn:li:person:{member_id}"
+    name = data.get("localizedFirstName", "") + " " + data.get("localizedLastName", "")
+    print(f"[info] Authenticated as: {name.strip()} → {urn}")
+    return urn
 
 
 def main():
@@ -165,7 +156,7 @@ def main():
     refresh_token = token_data.get("refresh_token", "")
     expires_in    = token_data.get("expires_in", 5183999)
 
-    org_urn = get_org_urn(access_token)
+    user_urn = get_person_urn(access_token)
 
     print("\n" + "="*60)
     print("  SUCCESS! Copy these values into GitHub Secrets:")
@@ -174,7 +165,7 @@ def main():
     print(f"  LINKEDIN_CLIENT_SECRET  = {CLIENT_SECRET}")
     print(f"  LINKEDIN_ACCESS_TOKEN   = {access_token}")
     print(f"  LINKEDIN_REFRESH_TOKEN  = {refresh_token or '(none — token valid for ~60 days)'}")
-    print(f"  LINKEDIN_ORG_URN        = {org_urn or '(none found — is this account an admin of the Webpenter Company Page?)'}")
+    print(f"  LINKEDIN_USER_URN       = {user_urn or '(not found — check /v2/me response)'}")
     print(f"\n  Token expires in: {expires_in // 86400} days")
 
     # Save locally as backup
@@ -183,7 +174,7 @@ def main():
         "client_secret": CLIENT_SECRET,
         "access_token": access_token,
         "refresh_token": refresh_token,
-        "org_urn": org_urn,
+        "user_urn": user_urn,
         "expires_in_seconds": expires_in,
     }
     with open("data/tokens_backup.json", "w") as f:
