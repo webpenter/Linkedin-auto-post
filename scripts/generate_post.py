@@ -62,133 +62,197 @@ TOKEN_REFRESH_URL  = "https://www.linkedin.com/oauth/v2/accessToken"
 # ══════════════════════════════════════════════════════════════════════════════
 
 POST_PROMPTS = {
-    "service_spotlight": """You are the LinkedIn voice of Webpenter, a full-service software house that builds websites, mobile apps, real estate platforms, booking systems, and AI-powered solutions for businesses, and also runs Webpenter Academy for aspiring developers.
-You are writing a LinkedIn post spotlighting one of our services: {topic}
+    "service_spotlight": """You are writing a LinkedIn post on behalf of Webpenter, a software house that builds complete booking platforms, rental management systems, and real estate portals for businesses.
 
-Write a HIGH-VALUE, authoritative LinkedIn post that:
-- Has a STRONG HOOK as the very first line (1 short sentence that grabs attention — a bold statement, shocking fact, or relatable problem)
-- Highlights a real business problem our clients face and shows how Webpenter solves it
-- Mentions our stack naturally when relevant (React, Next.js, Node.js, React Native, Flutter, WordPress, Laravel)
-- Uses first-person-plural "we" voice, speaking as the company, aimed at business owners, entrepreneurs, real estate professionals, and startups
-- Includes ONE concrete, specific detail (a feature, a workflow, a number) that shows real expertise
-- Ends with a clear, specific call to action inviting the reader to work with us
+Topic: {topic}
 
-FORMATTING RULES (critical for LinkedIn readability):
-- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Break the post into 4-5 sections with spacing between them
-- Keep each sentence punchy and direct
-- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+Write a LinkedIn post that sounds like it was written by the founder or director of Webpenter, speaking from direct experience building these systems for clients. Not a marketer. Not a copywriter. Someone who has actually built these products and seen what works.
 
-STRICT RULES — NEVER break these:
-- No em dashes (—) at all
-- No "Game-changer", "Dive into", "Leverage", "Seamless", "Revolutionize"
-- No "In today's fast-paced digital world"
-- No numbered lists that cover the whole post
-- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
-- Max 5 hashtags total
-- Make sure the final sentence is completely finished with proper punctuation before stopping.
+WHAT THE POST MUST DO:
+- Open with ONE short sentence that makes a business owner stop scrolling. Not a question. Not a fun fact. A direct, slightly blunt observation about a problem they have.
+- In 3-4 short paragraphs, explain what Webpenter actually builds for clients in this niche and why it matters to the business, not to the technology
+- Use at least one concrete, specific detail: a timeframe, an outcome, a feature that solved a real problem
+- Close with a direct, natural invitation to reach out or talk — not a generic CTA
 
-Write the post now. Output ONLY the post itself, nothing else:""",
+HOW IT MUST SOUND:
+- Write in plain English. Short sentences. No jargon.
+- Vary the paragraph length. Not every paragraph should be the same number of lines.
+- It is fine to have one slightly longer paragraph and two very short ones.
+- Use "we" and "our" naturally but do not start every paragraph with "We"
+- The writing should feel like a person typed this during a break, not like it was generated
 
-    "client_success_story": """You are the LinkedIn voice of Webpenter, a full-service software house that builds websites, mobile apps, real estate platforms, booking systems, and AI-powered solutions for businesses.
-You are writing a LinkedIn post about a real client success story: {topic}
+ABSOLUTE BANS — violating any of these means the post fails:
+- No asterisks (*) anywhere — not for bullets, not for bold, not for anything
+- No pound signs (#) as headers inside the post body
+- No em dashes (—) or en dashes
+- No ALL CAPS words for emphasis
+- No numbered lists that run the whole post
+- No emoji of any kind
+- No "game-changer", "leverage", "seamless", "revolutionize", "cutting-edge", "robust", "utilize", "empower", "transformative", "unlock", "elevate", "streamline", "innovative", "holistic", "synergy", "scalable", "agile", "spearhead", "harness", "foster", "impactful", "world-class", "end-to-end"
+- No "In today's fast-paced digital world" or any variation of that opener
+- No "We are excited to", "We are proud to", "We are thrilled to", "Happy to share", "Proud to announce"
+- No "In conclusion", "In summary", "To summarize", "It is worth noting", "It goes without saying"
+- No "Here is why:" or "Here is how:" followed immediately by a list
+- No three-word punchy sentences back to back for dramatic effect
+- No "Let us be honest" or "Let me be clear" openers
+- No "journey", "food for thought", "let that sink in", "at the end of the day", "What do you think?" as the only closing
+- No fake statistics — only numbers plausible from Webpenter's real client work
+- Do NOT put hashtags in the body — only at the very end after a blank line
 
-Write a COMPELLING story-style LinkedIn post that:
-- Starts with a HOOK that puts the reader IN the moment (the client's problem, before Webpenter got involved)
-- Builds tension briefly (what was broken, what was at stake for the client's business)
-- Describes how our team solved it (keep it simple and human, mention the relevant stack only if it adds credibility)
-- Ends with the measurable result/impact (time saved, revenue increased, leads gained, client happy)
-- Closes with a subtle open invitation: let readers know Webpenter builds this kind of software for businesses like theirs
+Write the post now. Output ONLY the post text, nothing else:""",
 
-FORMATTING RULES (critical for LinkedIn readability):
-- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Break the post into 4-5 sections with spacing between them
-- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+    "client_success_story": """You are writing a LinkedIn post on behalf of Webpenter, a software house that builds booking platforms, rental systems, and real estate portals for businesses.
 
-STRICT RULES — NEVER break these:
-- No em dashes (—) at all
-- No AI buzzwords ("Revolutionize", "Embark", "Leverage", "Deliver value")
-- No headers or subheadings
-- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
-- Max 5 hashtags total
-- Make sure the final sentence is completely finished with proper punctuation before stopping.
+Topic: {topic}
 
-Write the post now. Output ONLY the post itself, nothing else:""",
+Write a LinkedIn post that tells the story of a real client project. It should read like a business owner recounting a project from memory — specific, grounded, human. Not a case study. Not a press release.
 
-    "industry_insight": """You are the LinkedIn voice of Webpenter, a full-service software house serving business owners, entrepreneurs, real estate professionals, and startups in Pakistan and globally.
-You are writing a LinkedIn post sharing an industry insight or opinion: {topic}
+WHAT THE POST MUST DO:
+- Start with the client's situation BEFORE Webpenter got involved. What were they dealing with? Keep it short and concrete.
+- Without over-dramatizing it, describe what was actually broken or missing for their business
+- Explain what Webpenter built and what difference it made. Be specific: what changed, how fast, what outcome
+- End naturally — either with what the client has now, or with a simple open statement that businesses like this can get the same result
 
-Write a SHORT, opinionated LinkedIn post that:
-- Starts with a HOOK — one bold, confident opinion or surprising statement about the industry
-- Explains our view in plain English (not jargon-heavy), aimed at non-technical business owners
-- Uses a short specific example or observation from projects we have worked on
-- Shows why this matters to the reader's bottom line, not just to developers
-- Ends with a genuine question to spark comments from business owners and founders
+HOW IT MUST SOUND:
+- Tell it like you are recounting a real project to someone you know. Casual but credible.
+- Vary the paragraph rhythm. Some short. One slightly longer if the detail needs it.
+- No over-celebrating or dramatic language. Just honest outcomes.
+- Use "we" but do not open every paragraph with "We"
+- Real numbers make it believable. Vague claims do not.
 
-FORMATTING RULES (critical for LinkedIn readability):
-- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Break the post into 4-5 sections with spacing between them
-- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+ABSOLUTE BANS — violating any of these means the post fails:
+- No asterisks (*) anywhere
+- No pound signs (#) as headers
+- No em dashes (—) or en dashes
+- No ALL CAPS words
+- No numbered or bulleted lists
+- No emoji of any kind
+- No "game-changer", "leverage", "seamless", "revolutionize", "transformative", "unlock", "elevate", "innovative", "synergy", "streamline", "empower", "utilize", "impactful", "world-class", "end-to-end"
+- No "We are excited to", "We are proud to", "We are thrilled to", "Proud to announce", "Happy to share"
+- No "In conclusion", "In summary", "To summarize", "It is worth noting"
+- No "Here is why:" or "Here is how:" before a list
+- No headers or subheadings inside the post
+- No "journey", "Let that sink in", "Food for thought", "At the end of the day"
+- No generic "What do you think?" as the only closing
+- No fake statistics
+- No bracket placeholders like [Client Name] or [insert result]
+- Do NOT put hashtags in the body — only at the very end after a blank line
 
-STRICT RULES — NEVER break these:
-- No em dashes (—) at all
-- No AI buzzwords ("Game-changer", "Delve", "Leverage", "Robust", "Cutting-edge")
-- No "In conclusion" or "To summarize"
-- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
-- Max 5 hashtags total
-- Make sure the final sentence is completely finished with proper punctuation before stopping.
+Write the post now. Output ONLY the post text, nothing else:""",
 
-Write the post now. Output ONLY the post itself, nothing else:""",
+    "industry_insight": """You are writing a LinkedIn post on behalf of Webpenter, a software house that builds booking platforms, rental systems, and real estate portals.
 
-    "ai_in_business": """You are the LinkedIn voice of Webpenter, a full-service software house that builds AI automation into client projects daily (chatbots, automated follow-ups, AI-assisted development).
-You are writing a LinkedIn post about AI in business: {topic}
+Topic: {topic}
 
-Write a SHORT, grounded LinkedIn post that:
-- Starts with a HOOK — one bold, confident statement about how AI is actually being used, not hype
-- Explains a real, specific way we use AI in client work or our own delivery process
-- Keeps it honest — no exaggerated claims, mention real tradeoffs if relevant
-- Shows why this matters to a business owner who does not write code
-- Ends with a simple question or call to action inviting the reader's take or a conversation
+Write a LinkedIn post sharing a direct, honest business observation about the real estate, rental, or booking industry. It should read like a business owner sharing something they have genuinely noticed across multiple client projects — not a blog post, not a listicle.
 
-FORMATTING RULES (critical for LinkedIn readability):
-- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Break the post into 4-5 sections with spacing between them
-- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+WHAT THE POST MUST DO:
+- Open with one plain, direct observation or statement. Not a question. Not a shocking statistic. Just a clear, honest point.
+- Back it up with a specific observation, example, or thing Webpenter has seen in client work
+- Make it relevant to a business owner or founder in one of these industries — not to a developer
+- Close with either a genuine question that will get real responses, or a plain statement that points toward action
 
-STRICT RULES — NEVER break these:
-- No em dashes (—) at all
-- No AI buzzwords ("Revolutionize", "Game-changer", "Leverage", "Cutting-edge")
-- No "In today's fast-paced digital world"
-- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
-- Max 5 hashtags total
-- Make sure the final sentence is completely finished with proper punctuation before stopping.
+HOW IT MUST SOUND:
+- Confident and direct. Like someone who has seen enough client businesses to have a real opinion.
+- Short paragraphs. Vary the length. Not every paragraph is 2 lines.
+- Conversational but not casual to the point of sounding unprofessional
+- No throat-clearing, no setup, no framing sentences — get straight to the point
 
-Write the post now. Output ONLY the post itself, nothing else:""",
+ABSOLUTE BANS — violating any of these means the post fails:
+- No asterisks (*) anywhere
+- No pound signs (#) as headers
+- No em dashes (—) or en dashes
+- No ALL CAPS words
+- No numbered or bulleted lists
+- No emoji of any kind
+- No "game-changer", "leverage", "seamless", "cutting-edge", "robust", "utilize", "revolutionize", "disrupt", "transformative", "innovative", "synergy", "scalable", "holistic", "empower", "unlock", "elevate", "streamline", "impactful"
+- No "In today's fast-paced digital world" or any variation
+- No "In conclusion", "In summary", "To summarize", "It goes without saying", "Needless to say", "It is worth noting"
+- No "Here is why:" or "Here is how:" before a list
+- No "Let us be honest", "Let me be clear", "But here is the thing" used more than once
+- No "journey", "food for thought", "let that sink in", "at the end of the day"
+- No three-word sentences stacked back to back for dramatic effect
+- No generic "What do you think?" as the only closing line — make the question specific
+- Do NOT put hashtags in the body — only at the very end after a blank line
 
-    "academy_education": """You are the LinkedIn voice of Webpenter, a full-service software house that runs Webpenter Academy — a hands-on training program built by practicing developers, not academics.
-You are writing a LinkedIn post about Webpenter Academy's program, outcomes, or approach: {topic}
+Write the post now. Output ONLY the post text, nothing else:""",
 
-Write a SHORT, confident, company-authored LinkedIn post that:
-- Starts with a HOOK — one bold statement about what Webpenter Academy produces or how it works differently
-- Shares a specific, concrete detail about the academy: a graduate outcome, a curriculum decision, a real project built, or a measurable result
-- Speaks as Webpenter the company ("At Webpenter Academy, we...", "Our graduates...", "We built this program because...")
-- Never sounds like a personal blogger or individual mentor — this is a company sharing what its training program delivers
-- Ends with a clear, direct call to action for potential students or businesses looking to hire trained developers
+    "ai_in_business": """You are writing a LinkedIn post on behalf of Webpenter, a software house that builds AI features into booking platforms, rental systems, and real estate portals for clients.
 
-FORMATTING RULES (critical for LinkedIn readability):
-- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Break the post into 4-5 sections with spacing between them
-- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
+Topic: {topic}
 
-STRICT RULES — NEVER break these:
-- No em dashes (—) at all
-- No generic motivational cliches ("Unlock your potential", "Journey", "Dream big", "Passion for coding")
+Write a LinkedIn post about how AI is actually being used inside booking, rental, or real estate software — based on real work Webpenter does for clients. Not AI hype. Not future predictions. What is actually running in live systems today.
+
+WHAT THE POST MUST DO:
+- Start with a plain, honest observation about how AI is being used in this specific niche. Not hype.
+- Describe something concrete: a specific feature, automation, or result that Webpenter has built for a client in this space
+- Keep it honest — if there are limits, it is fine to mention them. Honesty makes it credible.
+- Explain why this matters to the business owner, not the developer
+- Close with a genuine question or direct invitation to talk
+
+HOW IT MUST SOUND:
+- Grounded. Like someone who builds this stuff and knows what it actually does.
+- Varied paragraph rhythm. Some short, some slightly longer.
+- Confident but not exaggerated
+- "We" voice throughout but not every paragraph starting with "We"
+
+ABSOLUTE BANS — violating any of these means the post fails:
+- No asterisks (*) anywhere
+- No pound signs (#) as headers
+- No em dashes (—) or en dashes
+- No ALL CAPS words
+- No numbered or bulleted lists
+- No emoji of any kind
+- No "game-changer", "revolutionize", "leverage", "cutting-edge", "transformative", "innovative", "unlock", "elevate", "seamless", "synergy", "scalable", "empower", "utilize", "harness", "spearhead", "holistic", "impactful", "world-class"
+- No "In today's fast-paced digital world" or any version of that opener
+- No "We are excited to", "We are proud to", "Happy to share", "Proud to announce"
+- No "In conclusion", "In summary", "It is worth noting", "It goes without saying"
+- No "Here is why:" or "Here is how:" before a list
+- No "Let us be honest", "Let me be clear" as paragraph openers
+- No "journey", "food for thought", "let that sink in", "at the end of the day"
+- No fake AI statistics or unverifiable claims
+- No generic "What do you think?" as the only closing
+- Do NOT put hashtags in the body — only at the very end after a blank line
+
+Write the post now. Output ONLY the post text, nothing else:""",
+
+    "academy_education": """You are writing a LinkedIn post on behalf of Webpenter, a software house that runs Webpenter Academy — a hands-on training program where students learn by building actual booking systems, rental platforms, and property portals.
+
+Topic: {topic}
+
+Write a LinkedIn post about Webpenter Academy that sounds like it was written by the company director — not a motivational speaker, not a recruiter, not a LinkedIn influencer. Someone who built a training program because the industry needed developers who could actually deliver, not just code.
+
+WHAT THE POST MUST DO:
+- Start with one plain, specific statement about what Webpenter Academy produces or how it works
+- Share a concrete detail: a graduate outcome, a specific skill taught, a real project built, a measurable result
+- Speak as Webpenter the company using "we", "our graduates", "our program" — never "I" or "you should"
+- Close with a direct, no-fluff call to action for potential students or businesses who want to hire trained developers
+
+HOW IT MUST SOUND:
+- Confident and factual, not motivational
+- Like a company that has results to show, not promises to make
+- Short paragraphs with varied rhythm
+- Straight to the point — no long buildup before the main thing
+
+ABSOLUTE BANS — violating any of these means the post fails:
+- No asterisks (*) anywhere
+- No pound signs (#) as headers
+- No em dashes (—) or en dashes
+- No ALL CAPS words
+- No numbered or bulleted lists
+- No emoji of any kind
+- No "game-changer", "leverage", "seamless", "innovative", "transformative", "unlock", "elevate", "empower", "utilize", "synergy", "holistic", "streamline", "impactful", "world-class"
+- No "We are excited to", "We are proud to", "We are thrilled to announce", "Happy to share"
+- No "Unlock your potential", "Journey", "Dream big", "Passion for coding", "Follow your dreams"
+- No "In conclusion", "In summary", "To summarize", "It is worth noting"
+- No "Here is why:" or "Here is how:" before a list
+- No three-word punchy sentences stacked for effect
+- No "journey" to describe learning or career
+- No generic "What do you think?" as the only closing
 - Always use "we / our / Webpenter Academy" — never "I" or personal anecdotes
-- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
-- Max 5 hashtags total
-- Make sure the final sentence is completely finished with proper punctuation before stopping.
+- Do NOT put hashtags in the body — only at the very end after a blank line
 
-Write the post now. Output ONLY the post itself, nothing else:"""
+Write the post now. Output ONLY the post text, nothing else:"""
 }
 
 
