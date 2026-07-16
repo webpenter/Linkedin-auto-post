@@ -75,30 +75,41 @@ def start_local_server():
 
 
 def get_person_urn(access_token: str) -> str:
-    """Fetch the authenticated member's own URN (urn:li:person:...)."""
+    """Fetch the authenticated member's own URN using OpenID Connect /v2/userinfo."""
     headers = {
+        "Authorization": f"Bearer {access_token}",
+    }
+
+    # Try /v2/userinfo first (works with openid + profile scopes)
+    resp = requests.get("https://api.linkedin.com/v2/userinfo", headers=headers)
+    if resp.ok:
+        data = resp.json()
+        sub = data.get("sub", "")  # 'sub' is the member ID in OpenID Connect
+        if sub:
+            urn = f"urn:li:person:{sub}"
+            name = data.get("name", data.get("given_name", ""))
+            print(f"[info] Authenticated as: {name} -> {urn}")
+            return urn
+
+    # Fallback: /rest/me (newer REST API)
+    headers_v2 = {
         "Authorization": f"Bearer {access_token}",
         "LinkedIn-Version": "202606",
         "X-Restli-Protocol-Version": "2.0.0",
     }
-    resp = requests.get(
-        "https://api.linkedin.com/v2/me",
-        headers=headers,
-    )
-    if not resp.ok:
-        print(f"[warn] Could not fetch member URN: {resp.status_code} {resp.text[:200]}")
-        return ""
+    resp2 = requests.get("https://api.linkedin.com/rest/me", headers=headers_v2)
+    if resp2.ok:
+        data = resp2.json()
+        member_id = data.get("id", "")
+        if member_id:
+            urn = f"urn:li:person:{member_id}"
+            name = data.get("localizedFirstName", "") + " " + data.get("localizedLastName", "")
+            print(f"[info] Authenticated as: {name.strip()} -> {urn}")
+            return urn
 
-    data = resp.json()
-    member_id = data.get("id", "")
-    if not member_id:
-        print("[warn] Member ID not found in /v2/me response.")
-        return ""
-
-    urn = f"urn:li:person:{member_id}"
-    name = data.get("localizedFirstName", "") + " " + data.get("localizedLastName", "")
-    print(f"[info] Authenticated as: {name.strip()} → {urn}")
-    return urn
+    print(f"[warn] Could not fetch member URN.")
+    print(f"       /v2/userinfo: {resp.status_code} {resp.text[:150]}")
+    return ""
 
 
 def main():
