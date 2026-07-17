@@ -223,10 +223,26 @@
       "text_preview": "Webpenter Academy produces developers who can take on client projects immediately. Our 3-month program focuses strictly on practical application, not theoretical concepts.\n\nGraduates spend their time ...",
       "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483758743797616640/"
+    },
+    {
+      "id": "urn:li:share:7483889738844639233",
+      "timestamp": "2026-07-17T14:25:58.456951+00:00",
+      "post_type": "client_success_story",
+      "topic": "How a rental business replaced phone calls and manual invoicing with a self-service booking system their customers actually use",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "softwarehouse",
+        "learntocode",
+        "businessautomation"
+      ],
+      "text_preview": "We had a rental client come to us a while back. Their setup was pretty standard: customers would call in to book equipment, and the team would handle all the invoicing manually. It was working, but th...",
+      "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483889738844639233/"
     }
   ],
-  "last_updated": "2026-07-17T05:45:26.576730+00:00",
-  "total_posts": 14,
+  "last_updated": "2026-07-17T14:25:58.456964+00:00",
+  "total_posts": 15,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -241,6 +257,7 @@
     "What actually makes a booking platform work for real customers",
     "Why property businesses with only a website are missing the half of their market that searches, browses, and books on mobile",
     "How one of our rental clients stopped losing bookings to competitors after we built them a proper availability and reservation platform",
-    "Why Webpenter Academy's 3-month program produces developers who can take on client work immediately after graduating"
+    "Why Webpenter Academy's 3-month program produces developers who can take on client work immediately after graduating",
+    "How a rental business replaced phone calls and manual invoicing with a self-service booking system their customers actually use"
   ]
 }
