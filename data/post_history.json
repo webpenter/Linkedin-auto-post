@@ -255,10 +255,26 @@
       "text_preview": "AI in booking and rental platforms often sounds like science fiction, but for our clients, it is solving real-world problems today. We are talking about practical applications that directly affect the...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484117583814672385/"
+    },
+    {
+      "id": "urn:li:share:7484249825769779200",
+      "timestamp": "2026-07-18T14:16:49.527233+00:00",
+      "post_type": "industry_insight",
+      "topic": "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "startuptech",
+        "seo",
+        "aiautomation"
+      ],
+      "text_preview": "Many rental companies are simply leaving money on the table.\n\nWe see this frequently with clients: businesses that have invested heavily in a great desktop website, but haven't given the same attentio...",
+      "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484249825769779200/"
     }
   ],
-  "last_updated": "2026-07-18T05:31:21.039630+00:00",
-  "total_posts": 16,
+  "last_updated": "2026-07-18T14:16:49.527250+00:00",
+  "total_posts": 17,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -275,6 +291,7 @@
     "How one of our rental clients stopped losing bookings to competitors after we built them a proper availability and reservation platform",
     "Why Webpenter Academy's 3-month program produces developers who can take on client work immediately after graduating",
     "How a rental business replaced phone calls and manual invoicing with a self-service booking system their customers actually use",
-    "Why rental platforms with AI availability management stop double bookings before they happen"
+    "Why rental platforms with AI availability management stop double bookings before they happen",
+    "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile"
   ]
 }
