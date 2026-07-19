@@ -287,10 +287,26 @@
       "text_preview": "Your website is likely leaving half your customers unable to book.\n\nWe see this often: a property business with a solid website, but no way for customers to search, browse, or book from their phone. T...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484486580578136064/"
+    },
+    {
+      "id": "urn:li:share:7484613295425929216",
+      "timestamp": "2026-07-19T14:21:07.892858+00:00",
+      "post_type": "ai_in_business",
+      "topic": "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "learntocode",
+        "bookingplatform",
+        "techpakistan"
+      ],
+      "text_preview": "AI in booking platforms is not about robots answering phones. It is about systems recognizing patterns and acting on them, quietly, in the background. We build tools that make this happen for our clie...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484613295425929216/"
     }
   ],
-  "last_updated": "2026-07-19T05:57:36.736006+00:00",
-  "total_posts": 18,
+  "last_updated": "2026-07-19T14:21:07.892876+00:00",
+  "total_posts": 19,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -308,6 +324,7 @@
     "Why Webpenter Academy's 3-month program produces developers who can take on client work immediately after graduating",
     "How a rental business replaced phone calls and manual invoicing with a self-service booking system their customers actually use",
     "Why rental platforms with AI availability management stop double bookings before they happen",
-    "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile"
+    "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile",
+    "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort"
   ]
 }
