@@ -303,10 +303,26 @@
       "text_preview": "AI in booking platforms is not about robots answering phones. It is about systems recognizing patterns and acting on them, quietly, in the background. We build tools that make this happen for our clie...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484613295425929216/"
+    },
+    {
+      "id": "urn:li:share:7484854917065572352",
+      "timestamp": "2026-07-20T06:21:14.958250+00:00",
+      "post_type": "service_spotlight",
+      "topic": "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "rentalplatform",
+        "appdevelopment",
+        "realestatetechnology"
+      ],
+      "text_preview": "Most online booking systems just show a calendar. That’s not enough to grow your business.\n\nWhat we build at Webpenter is different. We don't just display availability; we create complete platforms th...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484854917065572352/"
     }
   ],
-  "last_updated": "2026-07-19T14:21:07.892876+00:00",
-  "total_posts": 19,
+  "last_updated": "2026-07-20T06:21:14.958266+00:00",
+  "total_posts": 20,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -325,6 +341,7 @@
     "How a rental business replaced phone calls and manual invoicing with a self-service booking system their customers actually use",
     "Why rental platforms with AI availability management stop double bookings before they happen",
     "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile",
-    "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort"
+    "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort",
+    "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure"
   ]
 }
