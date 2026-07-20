@@ -319,10 +319,26 @@
       "text_preview": "Most online booking systems just show a calendar. That’s not enough to grow your business.\n\nWhat we build at Webpenter is different. We don't just display availability; we create complete platforms th...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484854917065572352/"
+    },
+    {
+      "id": "urn:li:share:7484986285237981188",
+      "timestamp": "2026-07-20T15:03:15.308871+00:00",
+      "post_type": "academy_education",
+      "topic": "Why Webpenter Academy focuses on practical delivery skills: building real booking systems, portals, and apps",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "mobileappdevelopment",
+        "seo",
+        "digitaltransformation"
+      ],
+      "text_preview": "Webpenter Academy focuses on equipping developers with practical delivery skills. Our program trains individuals to build functional systems that meet real-world business needs.\n\nWe do not teach codin...",
+      "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484986285237981188/"
     }
   ],
-  "last_updated": "2026-07-20T06:21:14.958266+00:00",
-  "total_posts": 20,
+  "last_updated": "2026-07-20T15:03:15.308889+00:00",
+  "total_posts": 21,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -342,6 +358,7 @@
     "Why rental platforms with AI availability management stop double bookings before they happen",
     "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile",
     "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort",
-    "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure"
+    "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure",
+    "Why Webpenter Academy focuses on practical delivery skills: building real booking systems, portals, and apps"
   ]
 }
