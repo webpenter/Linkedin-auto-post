@@ -351,10 +351,26 @@
       "text_preview": "When we talk about AI in real estate or rental systems, it is often about what might be possible someday. But many of our clients are already running systems with practical AI features handling key bu...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485210707962019840/"
+    },
+    {
+      "id": "urn:li:share:7485347141092020225",
+      "timestamp": "2026-07-21T14:57:10.356848+00:00",
+      "post_type": "industry_insight",
+      "topic": "Why businesses in real estate, rentals, and bookings need a web platform and a mobile app working together, not two separate tools",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "aiautomation",
+        "rentalplatform",
+        "bookingplatform"
+      ],
+      "text_preview": "We often see businesses try to bolt on a mobile app to an existing web platform, only to discover they have created two separate tools.\n\nIt is a common scenario in real estate and rentals, where a bus...",
+      "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485347141092020225/"
     }
   ],
-  "last_updated": "2026-07-21T05:55:02.138919+00:00",
-  "total_posts": 22,
+  "last_updated": "2026-07-21T14:57:10.356867+00:00",
+  "total_posts": 23,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -376,6 +392,7 @@
     "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort",
     "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure",
     "Why Webpenter Academy focuses on practical delivery skills: building real booking systems, portals, and apps",
-    "What AI automation inside a rental business actually looks like: from the first inquiry to the final invoice, without manual steps"
+    "What AI automation inside a rental business actually looks like: from the first inquiry to the final invoice, without manual steps",
+    "Why businesses in real estate, rentals, and bookings need a web platform and a mobile app working together, not two separate tools"
   ]
 }
