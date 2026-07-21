@@ -335,10 +335,26 @@
       "text_preview": "Webpenter Academy focuses on equipping developers with practical delivery skills. Our program trains individuals to build functional systems that meet real-world business needs.\n\nWe do not teach codin...",
       "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484986285237981188/"
+    },
+    {
+      "id": "urn:li:share:7485210707962019840",
+      "timestamp": "2026-07-21T05:55:02.138901+00:00",
+      "post_type": "ai_in_business",
+      "topic": "What AI automation inside a rental business actually looks like: from the first inquiry to the final invoice, without manual steps",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "realestatetech",
+        "softwarehouse",
+        "reactnative"
+      ],
+      "text_preview": "When we talk about AI in real estate or rental systems, it is often about what might be possible someday. But many of our clients are already running systems with practical AI features handling key bu...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485210707962019840/"
     }
   ],
-  "last_updated": "2026-07-20T15:03:15.308889+00:00",
-  "total_posts": 21,
+  "last_updated": "2026-07-21T05:55:02.138919+00:00",
+  "total_posts": 22,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -359,6 +375,7 @@
     "Why rental companies that only have a website are missing the half of their market that discovers and books exclusively on mobile",
     "Why booking businesses that use AI to send the right message at the right time retain more customers with less effort",
     "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure",
-    "Why Webpenter Academy focuses on practical delivery skills: building real booking systems, portals, and apps"
+    "Why Webpenter Academy focuses on practical delivery skills: building real booking systems, portals, and apps",
+    "What AI automation inside a rental business actually looks like: from the first inquiry to the final invoice, without manual steps"
   ]
 }
