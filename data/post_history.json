@@ -367,10 +367,26 @@
       "text_preview": "We often see businesses try to bolt on a mobile app to an existing web platform, only to discover they have created two separate tools.\n\nIt is a common scenario in real estate and rentals, where a bus...",
       "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485347141092020225/"
+    },
+    {
+      "id": "urn:li:share:7485572811110027266",
+      "timestamp": "2026-07-22T05:53:54.227001+00:00",
+      "post_type": "client_success_story",
+      "topic": "How one of our rental clients stopped losing bookings to competitors after we built them a proper availability and reservation platform",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "nextjs",
+        "startuptech",
+        "realestatetechnology"
+      ],
+      "text_preview": "We recently worked with a rental business that was struggling with a common problem: they were losing bookings because their availability wasn't clear. Their old system was a patchwork of spreadsheets...",
+      "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485572811110027266/"
     }
   ],
-  "last_updated": "2026-07-21T14:57:10.356867+00:00",
-  "total_posts": 23,
+  "last_updated": "2026-07-22T05:53:54.227016+00:00",
+  "total_posts": 24,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
