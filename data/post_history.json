@@ -415,10 +415,26 @@
       "text_preview": "Every new student at Webpenter Academy receives a complete web development roadmap from day one. This structured approach guides them through building functional platforms, not just learning syntax.\n\n...",
       "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485938044412399618/"
+    },
+    {
+      "id": "urn:li:share:7486073362868346880",
+      "timestamp": "2026-07-23T15:02:55.066817+00:00",
+      "post_type": "service_spotlight",
+      "topic": "What separates a booking platform that grows a business from one that just displays availability and looks like a brochure",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "aiautomation",
+        "seo",
+        "appdevelopment"
+      ],
+      "text_preview": "Most booking platforms are just expensive brochures.\n\nWe build systems that actively grow a business. It's not about just showing availability. Our work goes into the backend: automating pricing, mana...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486073362868346880/"
     }
   ],
-  "last_updated": "2026-07-23T06:05:12.532544+00:00",
-  "total_posts": 26,
+  "last_updated": "2026-07-23T15:02:55.066833+00:00",
+  "total_posts": 27,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
