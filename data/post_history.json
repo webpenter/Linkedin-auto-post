@@ -399,10 +399,26 @@
       "text_preview": "We recently worked with a real estate firm that had no digital presence. Zero. Everything was paper based, walk-ins, and phone calls. Their agents were spending hours sifting through physical files, a...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485709651926208512/"
+    },
+    {
+      "id": "urn:li:share:7485938044412399618",
+      "timestamp": "2026-07-23T06:05:12.532528+00:00",
+      "post_type": "academy_education",
+      "topic": "The web development roadmap Webpenter Academy gives every new student from day one",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "reactnative",
+        "webdevelopment",
+        "softwarehouse"
+      ],
+      "text_preview": "Every new student at Webpenter Academy receives a complete web development roadmap from day one. This structured approach guides them through building functional platforms, not just learning syntax.\n\n...",
+      "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485938044412399618/"
     }
   ],
-  "last_updated": "2026-07-22T14:57:39.354429+00:00",
-  "total_posts": 25,
+  "last_updated": "2026-07-23T06:05:12.532544+00:00",
+  "total_posts": 26,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -426,6 +442,7 @@
     "Why Webpenter Academy focuses on practical delivery skills: building real booking systems, portals, and apps",
     "What AI automation inside a rental business actually looks like: from the first inquiry to the final invoice, without manual steps",
     "Why businesses in real estate, rentals, and bookings need a web platform and a mobile app working together, not two separate tools",
-    "How a real estate firm with zero digital presence went fully live with a property portal and mobile app in 10 weeks"
+    "How a real estate firm with zero digital presence went fully live with a property portal and mobile app in 10 weeks",
+    "The web development roadmap Webpenter Academy gives every new student from day one"
   ]
 }
