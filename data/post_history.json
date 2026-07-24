@@ -431,10 +431,26 @@
       "text_preview": "Most booking platforms are just expensive brochures.\n\nWe build systems that actively grow a business. It's not about just showing availability. Our work goes into the backend: automating pricing, mana...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486073362868346880/"
+    },
+    {
+      "id": "urn:li:share:7486297417722605570",
+      "timestamp": "2026-07-24T05:53:13.896853+00:00",
+      "post_type": "ai_in_business",
+      "topic": "How we integrated AI price recommendation into a rental platform so owners always know the optimal rate to charge",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "businessautomation",
+        "nextjs",
+        "webpenteracademy"
+      ],
+      "text_preview": "A lot of the conversation around AI focuses on future possibilities. We are more interested in what it is doing *today* in live systems.\n\nOne practical application we developed for a client is an AI-p...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486297417722605570/"
     }
   ],
-  "last_updated": "2026-07-23T15:02:55.066833+00:00",
-  "total_posts": 27,
+  "last_updated": "2026-07-24T05:53:13.896865+00:00",
+  "total_posts": 28,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -459,6 +475,7 @@
     "What AI automation inside a rental business actually looks like: from the first inquiry to the final invoice, without manual steps",
     "Why businesses in real estate, rentals, and bookings need a web platform and a mobile app working together, not two separate tools",
     "How a real estate firm with zero digital presence went fully live with a property portal and mobile app in 10 weeks",
-    "The web development roadmap Webpenter Academy gives every new student from day one"
+    "The web development roadmap Webpenter Academy gives every new student from day one",
+    "How we integrated AI price recommendation into a rental platform so owners always know the optimal rate to charge"
   ]
 }
