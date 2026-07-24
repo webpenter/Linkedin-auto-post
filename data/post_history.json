@@ -447,10 +447,26 @@
       "text_preview": "A lot of the conversation around AI focuses on future possibilities. We are more interested in what it is doing *today* in live systems.\n\nOne practical application we developed for a client is an AI-p...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486297417722605570/"
+    },
+    {
+      "id": "urn:li:share:7486431521961103360",
+      "timestamp": "2026-07-24T14:46:06.746730+00:00",
+      "post_type": "ai_in_business",
+      "topic": "How AI tenant screening inside a rental management platform cuts the time landlords spend on applications in half",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "websitedevelopment",
+        "bookingplatform",
+        "reactnative"
+      ],
+      "text_preview": "AI in booking platforms and rental systems often means practical, behind-the-scenes automation. It is not about sentient robots handling showings; it is about smarter workflows that reduce manual drud...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486431521961103360/"
     }
   ],
-  "last_updated": "2026-07-24T05:53:13.896865+00:00",
-  "total_posts": 28,
+  "last_updated": "2026-07-24T14:46:06.746745+00:00",
+  "total_posts": 29,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -476,6 +492,7 @@
     "Why businesses in real estate, rentals, and bookings need a web platform and a mobile app working together, not two separate tools",
     "How a real estate firm with zero digital presence went fully live with a property portal and mobile app in 10 weeks",
     "The web development roadmap Webpenter Academy gives every new student from day one",
-    "How we integrated AI price recommendation into a rental platform so owners always know the optimal rate to charge"
+    "How we integrated AI price recommendation into a rental platform so owners always know the optimal rate to charge",
+    "How AI tenant screening inside a rental management platform cuts the time landlords spend on applications in half"
   ]
 }
