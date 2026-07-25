@@ -479,10 +479,26 @@
       "text_preview": "Your website is only reaching half of your potential customers.\n\nMany property businesses we work with start by only having a website. They're missing out on everyone who prefers to search, browse, an...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486658055078850560/"
+    },
+    {
+      "id": "urn:li:share:7486789091079020544",
+      "timestamp": "2026-07-25T14:26:57.505452+00:00",
+      "post_type": "client_success_story",
+      "topic": "A real estate agency cut their lead response time from 4 hours to under 10 minutes after we built automated inquiry routing into their portal",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "mobileappdevelopment",
+        "rentalplatform",
+        "seo"
+      ],
+      "text_preview": "We recently worked with a real estate agency that was struggling with lead response times. Inquiries would come in through their website, and the process to get them to the right agent was manual and ...",
+      "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486789091079020544/"
     }
   ],
-  "last_updated": "2026-07-25T05:46:16.571090+00:00",
-  "total_posts": 30,
+  "last_updated": "2026-07-25T14:26:57.505470+00:00",
+  "total_posts": 31,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -509,6 +525,7 @@
     "How a real estate firm with zero digital presence went fully live with a property portal and mobile app in 10 weeks",
     "The web development roadmap Webpenter Academy gives every new student from day one",
     "How we integrated AI price recommendation into a rental platform so owners always know the optimal rate to charge",
-    "How AI tenant screening inside a rental management platform cuts the time landlords spend on applications in half"
+    "How AI tenant screening inside a rental management platform cuts the time landlords spend on applications in half",
+    "A real estate agency cut their lead response time from 4 hours to under 10 minutes after we built automated inquiry routing into their portal"
   ]
 }
