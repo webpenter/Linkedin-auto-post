@@ -463,10 +463,26 @@
       "text_preview": "AI in booking platforms and rental systems often means practical, behind-the-scenes automation. It is not about sentient robots handling showings; it is about smarter workflows that reduce manual drud...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486431521961103360/"
+    },
+    {
+      "id": "urn:li:share:7486658055078850560",
+      "timestamp": "2026-07-25T05:46:16.571071+00:00",
+      "post_type": "service_spotlight",
+      "topic": "Why property businesses with only a website are missing the half of their market that searches, browses, and books on mobile",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "webdevelopment",
+        "realestatetechnology",
+        "startuptech"
+      ],
+      "text_preview": "Your website is only reaching half of your potential customers.\n\nMany property businesses we work with start by only having a website. They're missing out on everyone who prefers to search, browse, an...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486658055078850560/"
     }
   ],
-  "last_updated": "2026-07-24T14:46:06.746745+00:00",
-  "total_posts": 29,
+  "last_updated": "2026-07-25T05:46:16.571090+00:00",
+  "total_posts": 30,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
