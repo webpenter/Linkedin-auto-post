@@ -495,10 +495,26 @@
       "text_preview": "We recently worked with a real estate agency that was struggling with lead response times. Inquiries would come in through their website, and the process to get them to the right agent was manual and ...",
       "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7486789091079020544/"
+    },
+    {
+      "id": "urn:li:share:7487026321504505856",
+      "timestamp": "2026-07-26T06:09:38.125786+00:00",
+      "post_type": "industry_insight",
+      "topic": "Why businesses in real estate, rentals, and bookings need a web platform and a mobile app working together, not two separate tools",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "learntocode",
+        "aiautomation",
+        "businessautomation"
+      ],
+      "text_preview": "Running a booking, rental, or real estate business with a separate web platform and mobile app is a bigger problem than many owners realize. We have seen it too many times.\n\nWhen the two tools do not ...",
+      "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487026321504505856/"
     }
   ],
-  "last_updated": "2026-07-25T14:26:57.505470+00:00",
-  "total_posts": 31,
+  "last_updated": "2026-07-26T06:09:38.125802+00:00",
+  "total_posts": 32,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
