@@ -511,10 +511,26 @@
       "text_preview": "Running a booking, rental, or real estate business with a separate web platform and mobile app is a bigger problem than many owners realize. We have seen it too many times.\n\nWhen the two tools do not ...",
       "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487026321504505856/"
+    },
+    {
+      "id": "urn:li:share:7487150936507727872",
+      "timestamp": "2026-07-26T14:24:48.661756+00:00",
+      "post_type": "service_spotlight",
+      "topic": "What a complete real estate solution from Webpenter actually includes: property portal, mobile app, and backend all connected",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "realestatetech",
+        "webpenteracademy",
+        "nextjs"
+      ],
+      "text_preview": "Real estate businesses often have fragmented systems.\n\nWe build complete real estate solutions. This means a fully functional property portal where clients can browse listings and make inquiries. It i...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487150936507727872/"
     }
   ],
-  "last_updated": "2026-07-26T06:09:38.125802+00:00",
-  "total_posts": 32,
+  "last_updated": "2026-07-26T14:24:48.661772+00:00",
+  "total_posts": 33,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -542,6 +558,7 @@
     "The web development roadmap Webpenter Academy gives every new student from day one",
     "How we integrated AI price recommendation into a rental platform so owners always know the optimal rate to charge",
     "How AI tenant screening inside a rental management platform cuts the time landlords spend on applications in half",
-    "A real estate agency cut their lead response time from 4 hours to under 10 minutes after we built automated inquiry routing into their portal"
+    "A real estate agency cut their lead response time from 4 hours to under 10 minutes after we built automated inquiry routing into their portal",
+    "What a complete real estate solution from Webpenter actually includes: property portal, mobile app, and backend all connected"
   ]
 }
