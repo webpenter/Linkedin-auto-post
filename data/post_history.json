@@ -527,10 +527,26 @@
       "text_preview": "Real estate businesses often have fragmented systems.\n\nWe build complete real estate solutions. This means a fully functional property portal where clients can browse listings and make inquiries. It i...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487150936507727872/"
+    },
+    {
+      "id": "urn:li:share:7487394958820360192",
+      "timestamp": "2026-07-27T06:34:28.109604+00:00",
+      "post_type": "academy_education",
+      "topic": "The web development roadmap Webpenter Academy gives every new student from day one",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "startuptech",
+        "websitedevelopment",
+        "webdevelopment"
+      ],
+      "text_preview": "At Webpenter Academy, every new student receives a clear web development roadmap from day one. This structured approach ensures they build actual applications, not just practice isolated concepts.\n\nOu...",
+      "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487394958820360192/"
     }
   ],
-  "last_updated": "2026-07-26T14:24:48.661772+00:00",
-  "total_posts": 33,
+  "last_updated": "2026-07-27T06:34:28.109620+00:00",
+  "total_posts": 34,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
