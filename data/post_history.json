@@ -559,10 +559,26 @@
       "text_preview": "Real estate businesses are increasingly using AI to match properties with buyer preferences, leading to faster deal closures. This isn't about futuristic predictions; it's about practical applications...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487531701724823552/"
+    },
+    {
+      "id": "urn:li:share:7487746434193166338",
+      "timestamp": "2026-07-28T05:51:06.362901+00:00",
+      "post_type": "academy_education",
+      "topic": "How Webpenter Academy's curriculum was designed by a software house that builds real estate and booking platforms daily",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "softwarehouse",
+        "realestatetech",
+        "digitaltransformation"
+      ],
+      "text_preview": "Webpenter Academy trains developers by having them build real-world booking systems and property platforms. Our curriculum reflects the daily demands of a software house that specializes in these comp...",
+      "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487746434193166338/"
     }
   ],
-  "last_updated": "2026-07-27T15:37:50.181917+00:00",
-  "total_posts": 35,
+  "last_updated": "2026-07-28T05:51:06.362936+00:00",
+  "total_posts": 36,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -592,6 +608,7 @@
     "How AI tenant screening inside a rental management platform cuts the time landlords spend on applications in half",
     "A real estate agency cut their lead response time from 4 hours to under 10 minutes after we built automated inquiry routing into their portal",
     "What a complete real estate solution from Webpenter actually includes: property portal, mobile app, and backend all connected",
-    "Why real estate businesses using AI to match properties to buyer preferences are closing deals faster"
+    "Why real estate businesses using AI to match properties to buyer preferences are closing deals faster",
+    "How Webpenter Academy's curriculum was designed by a software house that builds real estate and booking platforms daily"
   ]
 }
