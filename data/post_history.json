@@ -607,10 +607,26 @@
       "text_preview": "A property management company came to us looking for a new website. What they really needed was a way to untangle their operations. They were juggling three separate systems for everything: one for te...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488110133533863937/"
+    },
+    {
+      "id": "urn:li:share:7488248349721055233",
+      "timestamp": "2026-07-29T15:05:32.394117+00:00",
+      "post_type": "service_spotlight",
+      "topic": "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "pakistansoftware",
+        "websitedevelopment",
+        "webpenteracademy"
+      ],
+      "text_preview": "Many rental businesses try to build a website and a mobile app as completely separate projects. This is usually a mistake.\n\nWe see the problem regularly: a booking website that doesn't talk to the mob...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488248349721055233/"
     }
   ],
-  "last_updated": "2026-07-29T05:56:19.040602+00:00",
-  "total_posts": 38,
+  "last_updated": "2026-07-29T15:05:32.394137+00:00",
+  "total_posts": 39,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -643,6 +659,7 @@
     "Why real estate businesses using AI to match properties to buyer preferences are closing deals faster",
     "How Webpenter Academy's curriculum was designed by a software house that builds real estate and booking platforms daily",
     "A rental company went from managing bookings in spreadsheets to handling 200 plus monthly reservations through our platform",
-    "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system"
+    "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system",
+    "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects"
   ]
 }
