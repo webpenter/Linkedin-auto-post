@@ -591,10 +591,26 @@
       "text_preview": "We worked with a property rental company a while back that was managing its entire operation on spreadsheets. Every booking, every availability check, every payment reminder, all done manually.\n\nIt wo...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487887887745769472/"
+    },
+    {
+      "id": "urn:li:share:7488110133533863937",
+      "timestamp": "2026-07-29T05:56:19.040586+00:00",
+      "post_type": "client_success_story",
+      "topic": "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "techpakistan",
+        "seo",
+        "reactnative"
+      ],
+      "text_preview": "A property management company came to us looking for a new website. What they really needed was a way to untangle their operations. They were juggling three separate systems for everything: one for te...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488110133533863937/"
     }
   ],
-  "last_updated": "2026-07-28T15:13:11.028416+00:00",
-  "total_posts": 37,
+  "last_updated": "2026-07-29T05:56:19.040602+00:00",
+  "total_posts": 38,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -626,6 +642,7 @@
     "What a complete real estate solution from Webpenter actually includes: property portal, mobile app, and backend all connected",
     "Why real estate businesses using AI to match properties to buyer preferences are closing deals faster",
     "How Webpenter Academy's curriculum was designed by a software house that builds real estate and booking platforms daily",
-    "A rental company went from managing bookings in spreadsheets to handling 200 plus monthly reservations through our platform"
+    "A rental company went from managing bookings in spreadsheets to handling 200 plus monthly reservations through our platform",
+    "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system"
   ]
 }
