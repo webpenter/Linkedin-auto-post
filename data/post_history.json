@@ -623,10 +623,26 @@
       "text_preview": "Many rental businesses try to build a website and a mobile app as completely separate projects. This is usually a mistake.\n\nWe see the problem regularly: a booking website that doesn't talk to the mob...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488248349721055233/"
+    },
+    {
+      "id": "urn:li:share:7488469679733334016",
+      "timestamp": "2026-07-30T05:45:01.490927+00:00",
+      "post_type": "service_spotlight",
+      "topic": "How a properly built booking platform turns website visitors into confirmed reservations automatically without any manual step",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "aiautomation",
+        "realestatetech",
+        "realestatetechnology"
+      ],
+      "text_preview": "Turning a website visitor into a confirmed booking shouldn't require your team's manual effort.\n\nFor many businesses, a customer lands on their site, likes what they see, but then needs to call or ema...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488469679733334016/"
     }
   ],
-  "last_updated": "2026-07-29T15:05:32.394137+00:00",
-  "total_posts": 39,
+  "last_updated": "2026-07-30T05:45:01.490943+00:00",
+  "total_posts": 40,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -660,6 +676,7 @@
     "How Webpenter Academy's curriculum was designed by a software house that builds real estate and booking platforms daily",
     "A rental company went from managing bookings in spreadsheets to handling 200 plus monthly reservations through our platform",
     "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system",
-    "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects"
+    "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects",
+    "How a properly built booking platform turns website visitors into confirmed reservations automatically without any manual step"
   ]
 }
