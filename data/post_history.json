@@ -639,10 +639,26 @@
       "text_preview": "Turning a website visitor into a confirmed booking shouldn't require your team's manual effort.\n\nFor many businesses, a customer lands on their site, likes what they see, but then needs to call or ema...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488469679733334016/"
+    },
+    {
+      "id": "urn:li:share:7488610365321175041",
+      "timestamp": "2026-07-30T15:04:03.602456+00:00",
+      "post_type": "ai_in_business",
+      "topic": "What AI follow-up automation looks like inside a booking platform: confirmation emails, reminders, and re-engagement without manual work",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "softwarehouse",
+        "webdevelopment",
+        "nextjs"
+      ],
+      "text_preview": "When we talk about AI in booking platforms, rental systems, or real estate portals, much of the real work happens in the background. It is less about a chatbot replacing a human, and more about automa...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488610365321175041/"
     }
   ],
-  "last_updated": "2026-07-30T05:45:01.490943+00:00",
-  "total_posts": 40,
+  "last_updated": "2026-07-30T15:04:03.602474+00:00",
+  "total_posts": 41,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -677,6 +693,7 @@
     "A rental company went from managing bookings in spreadsheets to handling 200 plus monthly reservations through our platform",
     "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system",
     "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects",
-    "How a properly built booking platform turns website visitors into confirmed reservations automatically without any manual step"
+    "How a properly built booking platform turns website visitors into confirmed reservations automatically without any manual step",
+    "What AI follow-up automation looks like inside a booking platform: confirmation emails, reminders, and re-engagement without manual work"
   ]
 }
