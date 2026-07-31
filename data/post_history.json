@@ -655,10 +655,26 @@
       "text_preview": "When we talk about AI in booking platforms, rental systems, or real estate portals, much of the real work happens in the background. It is less about a chatbot replacing a human, and more about automa...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488610365321175041/"
+    },
+    {
+      "id": "urn:li:share:7488840096859820035",
+      "timestamp": "2026-07-31T06:16:55.920672+00:00",
+      "post_type": "academy_education",
+      "topic": "What makes Webpenter Academy different from free tutorials: project-based training on real client-grade work",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "rentalplatform",
+        "bookingplatform",
+        "seo"
+      ],
+      "text_preview": "Webpenter Academy trains developers by having them build actual client-grade booking systems and rental platforms. Our students do not learn with simulated tasks; they work on projects that mirror the...",
+      "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488840096859820035/"
     }
   ],
-  "last_updated": "2026-07-30T15:04:03.602474+00:00",
-  "total_posts": 41,
+  "last_updated": "2026-07-31T06:16:55.920687+00:00",
+  "total_posts": 42,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -694,6 +710,7 @@
     "A property management company asked us for a website. We delivered the customer portal, the owner app, and the admin panel as one system",
     "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects",
     "How a properly built booking platform turns website visitors into confirmed reservations automatically without any manual step",
-    "What AI follow-up automation looks like inside a booking platform: confirmation emails, reminders, and re-engagement without manual work"
+    "What AI follow-up automation looks like inside a booking platform: confirmation emails, reminders, and re-engagement without manual work",
+    "What makes Webpenter Academy different from free tutorials: project-based training on real client-grade work"
   ]
 }
