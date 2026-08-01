@@ -687,10 +687,26 @@
       "text_preview": "Many rental companies with only a website are missing a significant portion of their market. We see this often.\n\nThe reality is that a large segment of today's renters, especially younger demographics...",
       "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488975177968578560/"
+    },
+    {
+      "id": "urn:li:share:7489198189133086720",
+      "timestamp": "2026-08-01T05:59:51.737404+00:00",
+      "post_type": "client_success_story",
+      "topic": "A booking platform we built increased a hospitality business's confirmed reservations by 60 percent in the first 3 months",
+      "hashtags": [
+        "webpenter",
+        "softwaredevelopment",
+        "appdevelopment",
+        "realestatetechnology",
+        "softwarehouse"
+      ],
+      "text_preview": "A hospitality business came to us a while back. They had a decent operation with multiple locations, but their booking process was a mess. Guests were calling in, emailing, sometimes even trying to re...",
+      "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7489198189133086720/"
     }
   ],
-  "last_updated": "2026-07-31T15:13:41.227034+00:00",
-  "total_posts": 43,
+  "last_updated": "2026-08-01T05:59:51.737417+00:00",
+  "total_posts": 44,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -727,6 +743,7 @@
     "Why rental businesses need both a website and a mobile app running as one connected system, not two separate projects",
     "How a properly built booking platform turns website visitors into confirmed reservations automatically without any manual step",
     "What AI follow-up automation looks like inside a booking platform: confirmation emails, reminders, and re-engagement without manual work",
-    "What makes Webpenter Academy different from free tutorials: project-based training on real client-grade work"
+    "What makes Webpenter Academy different from free tutorials: project-based training on real client-grade work",
+    "A booking platform we built increased a hospitality business's confirmed reservations by 60 percent in the first 3 months"
   ]
 }
